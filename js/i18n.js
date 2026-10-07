@@ -18,7 +18,7 @@ window.I18N = {
     "nav.contact": "Contacto",
     "nav.cta": "Contacto",
 
-    "hero.status": "Disponible para prácticas 2026",
+    "hero.status": "Disponible para prácticas",
     "hero.eyebrow": "Ingeniería Mecatrónica · UNI · Lima, Perú",
     "hero.line1": "Luis",
     "hero.line2": "Fernando",
@@ -173,7 +173,7 @@ window.I18N = {
     "nav.contact": "Contact",
     "nav.cta": "Contact",
 
-    "hero.status": "Open to internships 2026",
+    "hero.status": "Open to internships",
     "hero.eyebrow": "Mechatronics Engineering · UNI · Lima, Peru",
     "hero.line1": "Luis",
     "hero.line2": "Fernando",
