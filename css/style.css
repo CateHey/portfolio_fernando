@@ -373,6 +373,22 @@ html.js .reveal.in .card-art .dash.draw { opacity: 0.75; }
 .stat-n .sup { color: var(--sky); font-size: 0.55em; vertical-align: super; }
 .stat-k { color: var(--muted); font-size: 0.92rem; line-height: 1.45; }
 
+/* Per-achievement colour + detail line */
+.stat[style*="--c-rgb"] {
+  --c: rgb(var(--c-rgb));
+  background:
+    radial-gradient(120% 80% at 100% 0%, rgba(var(--c-rgb), 0.22) 0%, transparent 55%),
+    linear-gradient(180deg, var(--surface) 0%, rgba(11, 22, 49, 0.7) 100%);
+  border-color: rgba(var(--c-rgb), 0.22);
+}
+.stat[style*="--c-rgb"]::before, .stat[style*="--c-rgb"]::after { border-color: var(--c); }
+.stat[style*="--c-rgb"]:hover { border-color: rgba(var(--c-rgb), 0.55); box-shadow: 0 24px 50px -26px rgba(var(--c-rgb), 0.75); }
+.stat[style*="--c-rgb"] .stat-ico { background: linear-gradient(135deg, rgba(var(--c-rgb), 1) 0%, rgba(var(--c-rgb), 0.65) 100%); color: #06102a; box-shadow: 0 8px 24px -8px rgba(var(--c-rgb), 0.8); }
+.stat[style*="--c-rgb"] .stat-n .pre, .stat[style*="--c-rgb"] .stat-n .sup { color: var(--c); }
+.stat-n { text-shadow: 0 0 30px rgba(var(--c-rgb, 108, 199, 255), 0.35); }
+.stat-foot { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; margin-top: auto; padding-top: 0.75rem; border-top: 1px dashed rgba(var(--c-rgb, 108, 150, 255), 0.3); color: var(--c, var(--sky)); font-size: 0.72rem; line-height: 1.4; letter-spacing: 0.02em; text-transform: none; }
+.stat-yr { position: absolute; top: 1.5rem; right: 1.2rem; font-size: 0.68rem; flex: none; padding: 0.15rem 0.45rem; border-radius: 999px; background: rgba(var(--c-rgb, 108, 199, 255), 0.14); border: 1px solid rgba(var(--c-rgb, 108, 199, 255), 0.35); color: #fff; }
+
 /* ---------- Experience ---------- */
 .job { display: grid; grid-template-columns: 15rem minmax(0, 1fr); gap: clamp(1.5rem, 3vw, 3rem); max-width: 64rem; margin-inline: auto; padding: clamp(1.6rem, 3vw, 2.6rem); border-radius: var(--radius); border: 1px solid var(--line); background: var(--surface); transition: border-color 0.4s, box-shadow 0.5s; }
 .job:hover { border-color: var(--line-2); box-shadow: 0 30px 60px -36px rgba(47, 107, 255, 0.7); }
