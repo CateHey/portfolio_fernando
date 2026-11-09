@@ -39,6 +39,13 @@
       var k = el.getAttribute('data-i18n');
       if (d[k] != null) el.textContent = d[k];
     });
+    $$('[data-i18n-alt]').forEach(function (el) {
+      var k = el.getAttribute('data-i18n-alt');
+      if (d[k] != null) el.setAttribute('alt', d[k]);
+    });
+    $$('.zoom').forEach(function (b) { if (d['aria.zoom']) b.setAttribute('aria-label', d['aria.zoom']); });
+    var lbClose = $('#lightboxClose');
+    if (lbClose && d['aria.close']) lbClose.setAttribute('aria-label', d['aria.close']);
 
     document.documentElement.setAttribute('lang', next);
     if (d['meta.title']) document.title = d['meta.title'];
@@ -104,7 +111,7 @@
     var dot = $('.cursor-dot', cursor);
     var ring = $('.cursor-ring', cursor);
     var mx = -100, my = -100, rx = -100, ry = -100;
-    var hoverSel = 'a, button, .card, .chips span, .lang-btn, .tile, .job, .award, .cert';
+    var hoverSel = 'a, button, .card, .chips span, .lang-btn, .stat, .job, .stop, .cert, .shot';
 
     document.body.classList.add('has-cursor');
     cursor.classList.add('is-hidden');
@@ -154,7 +161,7 @@
       progress.style.transform = 'scaleX(' + (h > 0 ? Math.min(1, y / h) : 0) + ')';
     }
     if (arm && !reduceMotion && window.innerWidth > 900) {
-      arm.style.setProperty('--py', (y * 0.18).toFixed(1) + 'px');
+      arm.style.setProperty('--py', (y * 0.08).toFixed(1) + 'px');
     }
     lastY = y;
     ticking = false;
@@ -262,7 +269,7 @@
         runCounters();
         countIO.disconnect();
       }
-    }, { threshold: 0.3 });
+    }, { threshold: 0.15 });
     countIO.observe(statsEl);
   }
 
@@ -334,6 +341,38 @@
       }
     });
   });
+
+  /* ---------------- Lightbox (photos & certificates) ---------------- */
+  var lb = $('#lightbox');
+  var lbImg = $('#lightboxImg');
+  var lastZoom = null;
+
+  function openLightbox(btn) {
+    if (!lb || !lbImg) return;
+    var img = $('img', btn);
+    lastZoom = btn;
+    lbImg.src = btn.getAttribute('data-full') || (img && img.src) || '';
+    lbImg.alt = img ? img.alt : '';
+    lb.classList.add('is-open');
+    lb.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('menu-open');
+    var c = $('#lightboxClose');
+    if (c) c.focus();
+  }
+  function closeLightbox() {
+    if (!lb || !lb.classList.contains('is-open')) return;
+    lb.classList.remove('is-open');
+    lb.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('menu-open');
+    if (lastZoom) lastZoom.focus();
+  }
+  $$('.zoom').forEach(function (b) {
+    b.addEventListener('click', function () { openLightbox(b); });
+  });
+  if (lb) {
+    lb.addEventListener('click', function (e) { if (e.target !== lbImg) closeLightbox(); });
+    window.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLightbox(); });
+  }
 
   /* ---------------- Footer year ---------------- */
   var yearEl = $('#year');

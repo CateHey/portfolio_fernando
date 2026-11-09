@@ -3,20 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Luis Fernando Varas — Ingeniería Mecatrónica · Robótica · Automatización</title>
-  <meta name="description" content="Portafolio de Luis Fernando Varas Padilla, estudiante de Ingeniería Mecatrónica (UNI, Lima). Robótica, sistemas embebidos, automatización y visión artificial. Top 50 NASA Space Apps 2024 · 3.er lugar ARLISS 2025.">
+  <title>Luis Fernando Varas — Ingeniería Mecatrónica · Robótica · Sistemas espaciales</title>
+  <meta name="description" content="Portafolio de Luis Fernando Varas Padilla, estudiante de último ciclo de Ingeniería Mecatrónica (UNI, Lima). Robótica, datos e IA. Única mención honrosa del Perú en NASA Space Apps 2024 · 4.º lugar ARLISS 2025 · EO-SAT-1 (FAP × UNI) · Noshiro Space Event 2026.">
   <meta name="author" content="Luis Fernando Varas Padilla">
-  <meta name="theme-color" content="#10237a">
+  <meta name="theme-color" content="#050a1a">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Luis Fernando Varas — Ingeniería Mecatrónica · Robótica · Automatización">
-  <meta property="og:description" content="Robótica, sistemas embebidos y automatización para el mundo real. Top 50 NASA Space Apps 2024 · 3.er lugar ARLISS 2025.">
+  <meta property="og:title" content="Luis Fernando Varas — Ingeniería Mecatrónica · Robótica · Sistemas espaciales">
+  <meta property="og:description" content="Robótica, datos e IA. NASA Space Apps 2024 · 4.º lugar ARLISS 2025 · EO-SAT-1 · Noshiro Space Event 2026.">
+  <meta property="og:image" content="img/arliss-2025.jpg">
   <meta property="og:locale" content="es_PE">
   <meta property="og:locale:alternate" content="en_US">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M0 0H52L64 12V64H12L0 52Z' fill='%23e3262e'/%3E%3Ctext x='32' y='42' font-family='Arial Black,Arial,sans-serif' font-weight='900' font-size='26' fill='%23fff' text-anchor='middle'%3ELV%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230c1734'/%3E%3Ctext x='32' y='42' font-family='Arial Black,Arial,sans-serif' font-weight='900' font-size='26' fill='%236cc7ff' text-anchor='middle'%3ELV%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
-  <link rel="stylesheet" href="css/style.css?v=7">
+  <link rel="stylesheet" href="css/style.css?v=10">
   <script>document.documentElement.classList.replace('no-js','js');</script>
   <script type="application/ld+json">
   {
@@ -28,8 +29,8 @@
     "address": { "@type": "PostalAddress", "addressLocality": "Lima", "addressCountry": "PE" },
     "email": "mailto:luis.varas.p@uni.pe",
     "telephone": "+51959503106",
-    "sameAs": ["https://www.linkedin.com/in/luisfvp/"],
-    "knowsAbout": ["Mecatrónica", "Robótica", "ROS 2", "Control PID", "Sistemas embebidos", "Telemetría", "Visión artificial", "Machine Learning", "Python", "C/C++"]
+    "sameAs": ["https://www.linkedin.com/in/luisfvp/", "https://github.com/FernandoVaras"],
+    "knowsAbout": ["Mecatrónica", "Robótica", "ROS 2", "Control PID", "Sistemas embebidos", "Telemetría", "CanSat", "Visión artificial", "Machine Learning", "Python", "C/C++"]
   }
   </script>
 </head>
@@ -38,8 +39,7 @@
   <!-- Loader -->
   <div class="loader" id="loader" aria-hidden="true">
     <div class="loader-inner">
-      <span class="loader-mark">LFV</span>
-      <span class="loader-count" id="loaderCount">000</span>
+      <span class="loader-mark">LFVP</span>
     </div>
     <div class="loader-bar"><span id="loaderBar"></span></div>
   </div>
@@ -54,16 +54,16 @@
   <header class="nav" id="nav">
     <div class="nav-inner">
       <a href="#top" class="brand" aria-label="Luis Fernando Varas — inicio">
-        <span class="brand-mark">LV</span>
+        <span class="brand-mark">LFVP</span>
         <span class="brand-text">Luis Fernando <strong>Varas</strong></span>
       </a>
 
       <nav class="nav-links" aria-label="Secciones">
         <a href="#about" data-i18n="nav.about">Sobre mí</a>
         <a href="#experience" data-i18n="nav.exp">Experiencia</a>
-        <a href="#education" data-i18n="nav.edu">Formación</a>
+        <a href="#journey" data-i18n="nav.journey">Competencias</a>
         <a href="#projects" data-i18n="nav.projects">Proyectos</a>
-        <a href="#awards" data-i18n="nav.awards">Logros</a>
+        <a href="#awards" data-i18n="nav.awards">Reconocimientos</a>
         <a href="#skills" data-i18n="nav.skills">Habilidades</a>
       </nav>
 
@@ -73,7 +73,7 @@
           <span class="lang-sep" aria-hidden="true">/</span>
           <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
         </div>
-        <a href="#contact" class="btn btn-red btn-sm nav-cta" data-i18n="nav.cta">Contacto</a>
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta" data-i18n="nav.cta">Contacto</a>
         <button type="button" class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
           <span></span><span></span>
         </button>
@@ -86,9 +86,9 @@
     <nav aria-label="Menú móvil">
       <a href="#about" data-i18n="nav.about">Sobre mí</a>
       <a href="#experience" data-i18n="nav.exp">Experiencia</a>
-      <a href="#education" data-i18n="nav.edu">Formación</a>
+      <a href="#journey" data-i18n="nav.journey">Competencias</a>
       <a href="#projects" data-i18n="nav.projects">Proyectos</a>
-      <a href="#awards" data-i18n="nav.awards">Logros</a>
+      <a href="#awards" data-i18n="nav.awards">Reconocimientos</a>
       <a href="#skills" data-i18n="nav.skills">Habilidades</a>
       <a href="#contact" data-i18n="nav.contact">Contacto</a>
     </nav>
@@ -103,68 +103,93 @@
     <!-- ===================== HERO ===================== -->
     <section class="hero" id="hero">
       <div class="hero-grid" aria-hidden="true"></div>
-      <div class="hero-scan" aria-hidden="true"></div>
       <div class="glow glow-hero" aria-hidden="true"></div>
 
       <div class="container hero-inner">
-        <div class="hero-top">
-          <p class="status"><span class="status-dot"></span><span data-i18n="hero.status">Disponible para prácticas</span></p>
-          <p class="eyebrow mono" data-i18n="hero.eyebrow">Ingeniería Mecatrónica · UNI · Lima, Perú</p>
-        </div>
-
-        <h1 class="hero-name">
-          <span class="line"><span style="--i:0" data-i18n="hero.line1">Luis</span></span>
-          <span class="line"><span style="--i:1" data-i18n="hero.line2">Fernando</span></span>
-          <span class="line"><span style="--i:2" class="accent" data-i18n="hero.line3">Varas</span></span>
-        </h1>
-
-        <div class="hero-bottom">
-          <div class="hero-copy">
-            <p class="hero-tagline" data-i18n="hero.tagline">Robótica, sistemas embebidos y automatización para el mundo real.</p>
-            <div class="hero-ctas">
-              <a href="#projects" class="btn btn-red" data-i18n="hero.cta1">Ver proyectos</a>
-              <a href="CV_FERNANDO_VARAS.docx" class="btn btn-ghost" download data-i18n="hero.cta2">Descargar CV</a>
-            </div>
+        <div class="hero-text">
+          <div class="hero-top">
+            <p class="status"><span class="status-dot"></span><span data-i18n="hero.status">Disponible para prácticas · Egreso dic. 2026</span></p>
+            <p class="eyebrow mono" data-i18n="hero.eyebrow">Ingeniería Mecatrónica · UNI · Lima, Perú</p>
           </div>
 
-          <aside class="spec" aria-label="Perfil">
-            <p class="spec-title mono" data-i18n="hero.spec.title">Perfil</p>
-            <dl class="spec-list">
-              <div><dt data-i18n="hero.spec.k1">Carrera</dt><dd data-i18n="hero.spec.v1">Ingeniería Mecatrónica · UNI · 10.º ciclo</dd></div>
-              <div><dt data-i18n="hero.spec.k2">Enfoque</dt><dd data-i18n="hero.spec.v2">Robótica · Sistemas embebidos · Automatización</dd></div>
-              <div><dt data-i18n="hero.spec.k3">Reconocimientos</dt><dd data-i18n="hero.spec.v3">NASA Space Apps Top 50 · ARLISS 3.er lugar</dd></div>
+          <h1 class="hero-name">
+            <span class="line"><span style="--i:0" data-i18n="hero.line1">Luis</span></span>
+            <span class="line"><span style="--i:1" data-i18n="hero.line2">Fernando</span></span>
+            <span class="line"><span style="--i:2" class="accent" data-i18n="hero.line3">Varas</span></span>
+          </h1>
+
+          <div class="hero-copy">
+            <p class="hero-tagline" data-i18n="hero.tagline">Robótica, datos e inteligencia artificial. Me motivan los retos nuevos: de un CanSat en el desierto de Nevada a modelos de machine learning con datos reales.</p>
+            <div class="hero-ctas">
+              <a href="#journey" class="btn btn-primary" data-i18n="hero.cta1">Ver mi trayectoria ↗</a>
+              <a href="CV_FERNANDO_VARAS.docx" class="btn btn-ghost" download data-i18n="hero.cta2">Descargar CV ↓</a>
+            </div>
+            <div class="hero-tech">
+              <p class="mono hero-tech-k" data-i18n="hero.tech">Tecnologías con las que trabajo</p>
+              <div class="hero-tech-group">
+                <p class="hero-tech-sub"><span class="ht-dot"></span><span data-i18n="hero.tech.a">Robótica y sistemas</span></p>
+                <ul class="hero-tech-list">
+                  <li>ROS 2</li><li>C/C++</li><li>OpenCV</li><li>Linux</li><li>MATLAB</li><li>Unity</li>
+                </ul>
+              </div>
+              <div class="hero-tech-group is-data">
+                <p class="hero-tech-sub"><span class="ht-dot"></span><span data-i18n="hero.tech.b">Datos e IA</span></p>
+                <ul class="hero-tech-list">
+                  <li>Python</li><li>SQL</li><li>Scikit-Learn</li><li>Power BI</li><li>MLflow</li><li>FastAPI</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="orb" aria-hidden="true">
+            <span class="orb-ring orb-ring-1"></span>
+            <span class="orb-ring orb-ring-2"></span>
+            <span class="orb-dots"></span>
+            <!-- 2-DOF planar arm (his own project), drawn as a blueprint -->
+            <svg class="arm" id="arm" viewBox="0 0 520 420" focusable="false">
+              <defs>
+                <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                  <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="1" opacity=".5"/>
+                </pattern>
+              </defs>
+              <circle cx="230" cy="330" r="210" class="arm-reach draw"/>
+              <circle cx="230" cy="330" r="30" class="arm-reach arm-reach-in draw"/>
+              <line x1="40" y1="330" x2="420" y2="330" class="arm-ground draw"/>
+              <rect x="40" y="330" width="380" height="14" fill="url(#hatch)" stroke="none"/>
+              <path d="M200 330 L230 290 L260 330 Z" class="arm-base draw"/>
+              <g class="arm-l1">
+                <line x1="230" y1="290" x2="230" y2="150" class="arm-link draw"/>
+                <circle cx="230" cy="290" r="10" class="arm-joint draw"/>
+                <text x="246" y="226" class="arm-label">L1 = 140</text>
+                <g class="arm-l2">
+                  <line x1="230" y1="150" x2="330" y2="150" class="arm-link draw"/>
+                  <circle cx="230" cy="150" r="10" class="arm-joint draw"/>
+                  <text x="250" y="140" class="arm-label">L2 = 100</text>
+                  <circle cx="330" cy="150" r="7" class="arm-ee"/>
+                  <line x1="330" y1="150" x2="330" y2="118" class="arm-ee-line draw"/>
+                  <line x1="318" y1="118" x2="342" y2="118" class="arm-ee-line draw"/>
+                </g>
+              </g>
+              <text x="52" y="316" class="arm-label">θ₁, θ₂ · PID · ROS 2</text>
+              <text x="52" y="300" class="arm-label arm-label-strong">PLANAR ARM · 2 DOF</text>
+            </svg>
+          </div>
+
+          <p class="float-badge float-badge-a"><span class="fb-k mono">ARLISS 2025</span><span class="fb-v" data-i18n="hero.badge1">4.º lugar internacional</span></p>
+          <p class="float-badge float-badge-b"><span class="fb-k mono">NASA Space Apps</span><span class="fb-v" data-i18n="hero.badge2">Top 50 mundial</span></p>
+
+          <aside class="code-card" aria-label="Perfil">
+            <p class="code-head mono"><span class="code-dots"><i></i><i></i><i></i></span><span data-i18n="hero.spec.file">perfil.yaml</span><span class="code-live"></span></p>
+            <dl class="code-body">
+              <div><dt data-i18n="hero.spec.k1">carrera</dt><dd data-i18n="hero.spec.v1">"Ing. Mecatrónica · UNI"</dd></div>
+              <div><dt data-i18n="hero.spec.k2">ciclo</dt><dd data-i18n="hero.spec.v2">10 · tercio superior</dd></div>
+              <div><dt data-i18n="hero.spec.k3">enfoque</dt><dd data-i18n="hero.spec.v3">[robótica, datos, IA]</dd></div>
+              <div><dt data-i18n="hero.spec.k4">estado</dt><dd class="ok" data-i18n="hero.spec.v4">disponible</dd></div>
             </dl>
           </aside>
         </div>
-
-        <!-- 2-DOF planar arm (his own project), drawn as a blueprint -->
-        <svg class="arm" id="arm" viewBox="0 0 520 420" aria-hidden="true" focusable="false">
-          <defs>
-            <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-              <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="1" opacity=".5"/>
-            </pattern>
-          </defs>
-          <circle cx="230" cy="330" r="210" class="arm-reach draw"/>
-          <circle cx="230" cy="330" r="30" class="arm-reach arm-reach-in draw"/>
-          <line x1="40" y1="330" x2="420" y2="330" class="arm-ground draw"/>
-          <rect x="40" y="330" width="380" height="14" fill="url(#hatch)" stroke="none"/>
-          <path d="M200 330 L230 290 L260 330 Z" class="arm-base draw"/>
-          <g class="arm-l1">
-            <line x1="230" y1="290" x2="230" y2="150" class="arm-link draw"/>
-            <circle cx="230" cy="290" r="10" class="arm-joint draw"/>
-            <text x="246" y="226" class="arm-label">L1 = 140</text>
-            <g class="arm-l2">
-              <line x1="230" y1="150" x2="330" y2="150" class="arm-link draw"/>
-              <circle cx="230" cy="150" r="10" class="arm-joint draw"/>
-              <text x="250" y="140" class="arm-label">L2 = 100</text>
-              <circle cx="330" cy="150" r="7" class="arm-ee"/>
-              <line x1="330" y1="150" x2="330" y2="118" class="arm-ee-line draw"/>
-              <line x1="318" y1="118" x2="342" y2="118" class="arm-ee-line draw"/>
-            </g>
-          </g>
-          <text x="52" y="316" class="arm-label">θ₁, θ₂ · PID · ROS 2</text>
-          <text x="52" y="300" class="arm-label arm-label-strong">PLANAR ARM · 2 DOF</text>
-        </svg>
       </div>
 
       <a href="#about" class="scroll-hint mono" aria-label="Ir a la siguiente sección">
@@ -177,137 +202,187 @@
     <div class="marquee" aria-hidden="true">
       <div class="marquee-track">
         <span class="marquee-group">
-          <span>ROS 2</span><i></i><span data-i18n="mq.pid">Control PID</span><i></i><span data-i18n="mq.emb">Sistemas embebidos</span><i></i><span data-i18n="mq.tel">Telemetría</span><i></i><span data-i18n="mq.cv">Visión artificial</span><i></i><span>C/C++</span><i></i><span>Python</span><i></i><span>IoT</span><i></i><span>Machine Learning</span><i></i><span>Mecatrónica</span><i></i>
+          <span>ROS 2</span><i></i><span>Machine Learning</span><i></i><span>CanSat</span><i></i><span>Python</span><i></i><span data-i18n="mq.pid">Control PID</span><i></i><span>SQL · Power BI</span><i></i><span data-i18n="mq.cv">Visión artificial</span><i></i><span data-i18n="mq.emb">Sistemas embebidos</span><i></i><span data-i18n="mq.ds">Ciencia de datos</span><i></i><span>Unity</span><i></i><span>C/C++</span><i></i><span>Hackathons</span><i></i>
         </span>
         <span class="marquee-group">
-          <span>ROS 2</span><i></i><span data-i18n="mq.pid">Control PID</span><i></i><span data-i18n="mq.emb">Sistemas embebidos</span><i></i><span data-i18n="mq.tel">Telemetría</span><i></i><span data-i18n="mq.cv">Visión artificial</span><i></i><span>C/C++</span><i></i><span>Python</span><i></i><span>IoT</span><i></i><span>Machine Learning</span><i></i><span>Mecatrónica</span><i></i>
+          <span>ROS 2</span><i></i><span>Machine Learning</span><i></i><span>CanSat</span><i></i><span>Python</span><i></i><span data-i18n="mq.pid">Control PID</span><i></i><span>SQL · Power BI</span><i></i><span data-i18n="mq.cv">Visión artificial</span><i></i><span data-i18n="mq.emb">Sistemas embebidos</span><i></i><span data-i18n="mq.ds">Ciencia de datos</span><i></i><span>Unity</span><i></i><span>C/C++</span><i></i><span>Hackathons</span><i></i>
         </span>
       </div>
     </div>
 
     <!-- ===================== ABOUT ===================== -->
     <section class="section" id="about">
-      <div class="container">
-        <div class="section-head reveal">
+      <div class="container about-grid">
+        <div class="about-copy reveal">
           <p class="label mono" data-i18n="about.label">Sobre mí</p>
-          <h2 class="section-title" data-i18n="about.title">Del laboratorio al campo</h2>
+          <h2 class="section-title" data-i18n="about.title">Me gustan los retos nuevos, con hardware o con datos</h2>
+          <p data-i18n="about.p1">Soy estudiante de último ciclo de Ingeniería Mecatrónica en la Universidad Nacional de Ingeniería (UNI), en el tercio superior, y egreso en diciembre de 2026. En 2024 obtuve el tercer puesto en el promedio ponderado de la Facultad de Ingeniería Mecánica, reconocimiento por el que recibí un Diploma de Honor y la medalla al mérito.</p>
+          <p data-i18n="about.p2">Lo que más me mueve son los retos nuevos, por todo lo que se aprende en el camino. Me atraen los proyectos físicos: el CanSat rover que llevamos al desierto de Nevada y luego a Japón, las hackathons o la misión con globo estratosférico junto a la Fuerza Aérea del Perú. Pero disfruto igual los retos de software. En el reto de EY tuve que predecir la calidad del agua partiendo solo de coordenadas y fechas, y conseguir el resto de los datos (satélite, clima y suelo) desde fuentes y APIs externas; en otro reto usé machine learning para anticipar la calidad del concentrado en una planta de flotación de hierro.</p>
+          <p data-i18n="about.p3">En Multipacha 4.0 pasé más de un año en el equipo de robótica: probé y mejoré algoritmos de odometría LiDAR, simulé en Unity dónde colocar los equipos y armé el registro continuo de los datos de campo hacia la nube.</p>
+          <p class="goal"><span class="mono goal-k" data-i18n="about.goal.k">Lo que busco</span><span class="goal-v" data-i18n="about.goal.v">Prácticas donde pueda seguir aprendiendo y asumir retos nuevos, ya sea en robótica, automatización, datos e IA o en cualquier problema interesante que haya que resolver.</span></p>
         </div>
 
-        <div class="about-grid">
-          <div class="about-copy reveal" data-reveal="left">
-            <p class="lead" data-i18n="about.p1">Estudiante de 10.º ciclo de Ingeniería Mecatrónica (UNI, quinto superior). Diseño e integro sistemas robóticos: control, electrónica, telemetría y software en ROS 2, con apoyo de visión artificial y análisis de datos.</p>
-            <p class="goal"><span class="mono goal-k" data-i18n="about.goal.k">Lo que busco</span><span class="goal-v" data-i18n="about.goal.v">Prácticas en machine learning, automatización industrial o de procesos, robótica, sistemas embebidos, datos y analítica.</span></p>
-          </div>
-
-          <div class="tiles">
-            <article class="tile tile-blue reveal" data-reveal="scale">
-              <h3 class="tile-title" data-i18n="about.t1">Robótica</h3>
-              <p class="tile-desc" data-i18n="about.t1d">ROS 2, control PID y rovers probados en campo.</p>
-            </article>
-            <article class="tile tile-red reveal" data-reveal="scale">
-              <h3 class="tile-title" data-i18n="about.t2">Sistemas embebidos</h3>
-              <p class="tile-desc" data-i18n="about.t2d">Electrónica, telemetría e IoT en tiempo real.</p>
-            </article>
-            <article class="tile tile-navy reveal" data-reveal="scale">
-              <h3 class="tile-title" data-i18n="about.t3">Visión e IA</h3>
-              <p class="tile-desc" data-i18n="about.t3d">OpenCV, machine learning y modelado predictivo.</p>
-            </article>
-          </div>
+        <div class="stats reveal" id="stats">
+          <article class="stat">
+            <span class="stat-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg></span>
+            <p class="stat-n"><span class="pre">Top </span><span class="num" data-count="50">50</span></p>
+            <p class="stat-k" data-i18n="stats.1">mundial en NASA Space Apps 2024 y única mención honrosa del Perú</p>
+          </article>
+          <article class="stat">
+            <span class="stat-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4"/></svg></span>
+            <p class="stat-n"><span class="num" data-count="4">4</span><span class="sup" data-i18n="stats.2sup">.º</span></p>
+            <p class="stat-k" data-i18n="stats.2">lugar internacional en ARLISS 2025 · CanSat Rover</p>
+          </article>
+          <article class="stat">
+            <span class="stat-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/></svg></span>
+            <p class="stat-n"><span class="num" data-count="3">3</span><span class="sup" data-i18n="stats.3sup">.er</span></p>
+            <p class="stat-k" data-i18n="stats.3">puesto en promedio ponderado 2024 · Facultad de Ing. Mecánica</p>
+          </article>
+          <article class="stat">
+            <span class="stat-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span>
+            <p class="stat-n"><span class="num" data-count="3">3</span></p>
+            <p class="stat-k" data-i18n="stats.4">países donde competí: Perú, EE. UU. y Japón</p>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- ===================== EXPERIENCE ===================== -->
-    <section class="section section-blue" id="experience">
-      <div class="sec-grid" aria-hidden="true"></div>
-      <div class="glow glow-a" aria-hidden="true"></div>
+    <section class="section section-alt" id="experience">
       <div class="container">
         <div class="section-head reveal">
           <p class="label mono" data-i18n="exp.label">Experiencia</p>
           <h2 class="section-title" data-i18n="exp.title">Experiencia profesional</h2>
         </div>
 
-        <ol class="timeline">
-          <li class="job reveal">
-            <div class="job-meta">
-              <p class="mono job-date" data-i18n="exp.1.date">May 2025 — Actualidad</p>
-              <p class="mono job-loc" data-i18n="exp.1.loc">Lima, Perú</p>
+        <article class="job reveal">
+          <div class="job-meta">
+            <p class="mono job-date" data-i18n="exp.1.date">May 2025 — Ago 2026</p>
+            <p class="mono job-loc" data-i18n="exp.1.loc">Lima, Perú</p>
+            <p class="job-company">Multipacha 4.0</p>
+            <p class="mono job-type" data-i18n="exp.1.type">IT Services &amp; Consulting</p>
+          </div>
+          <div class="job-body">
+            <h3 class="job-role" data-i18n="exp.1.role">Practicante en Tecnología y Transformación Digital</h3>
+            <p class="job-intro" data-i18n="exp.1.intro">Trabajé en el equipo de robótica, en sistemas que se prueban en campo con sensores reales: desde el software en ROS 2 hasta los datos que generan.</p>
+            <ul class="job-list">
+              <li data-i18n="exp.1.b1">Desarrollé y mantuve componentes en ROS 2 y Python para los sistemas robóticos de pruebas de campo, automatizando flujos que antes dependían de intervención manual.</li>
+              <li data-i18n="exp.1.b2">Probé y comparé el rendimiento de distintos algoritmos de reconstrucción y odometría con LiDAR (variantes de ICP) para elegir el más preciso, y trabajé en el mejoramiento del algoritmo de odometría (KISS-ICP) en C++ para estimar mejor el movimiento del robot, integrándolo como paquete de ROS 2.</li>
+              <li data-i18n="exp.1.b3">Simulé en Unity los equipos y su entorno para evaluar distintas ubicaciones y determinar dónde instalarlos para que rindieran mejor.</li>
+              <li data-i18n="exp.1.b4">Diseñé los pipelines y la arquitectura de datos de sensores y actuadores, con mensajería en tiempo real, trazabilidad y consistencia de la información.</li>
+              <li data-i18n="exp.1.b5">Desarrollé un sistema embebido de registro continuo que graba los datos de los sensores durante las pruebas de campo y los sube automáticamente a Amazon S3, dejando cada sesión disponible en la nube sin pasos manuales.</li>
+              <li data-i18n="exp.1.b6">Escalé pipelines robóticos modulares mediante refactorización y estandarización, lo que mejoró la mantenibilidad y la reutilización de módulos.</li>
+              <li data-i18n="exp.1.b7">Ejecuté pruebas funcionales y elaboré reportes técnicos de desempeño con recomendaciones para el equipo.</li>
+            </ul>
+            <div class="tags">
+              <span>ROS 2</span><span>C++</span><span>Python</span><span>LiDAR · ICP</span><span>Unity</span><span>Amazon S3</span><span>Linux</span><span data-i18n="exp.1.t8">Pipelines de datos</span>
             </div>
-            <div class="job-body">
-              <p class="job-company">Multipacha 4.0 <span class="job-type mono" data-i18n="exp.1.type">IT Services &amp; Consulting</span></p>
-              <h3 class="job-role" data-i18n="exp.1.role">Practicante en Tecnología y Transformación Digital</h3>
-              <ul class="job-list">
-                <li data-i18n="exp.1.b1">Automatización de flujos y componentes en ROS 2 para pruebas de campo.</li>
-                <li data-i18n="exp.1.b2">Pipelines de datos de sensores y actuadores en tiempo real.</li>
-                <li data-i18n="exp.1.b3">Reportes técnicos de desempeño para la toma de decisiones.</li>
-              </ul>
-              <div class="tags">
-                <span>ROS 2</span><span>Python</span><span data-i18n="exp.1.t3">Pipelines de datos</span><span data-i18n="exp.1.t4">Automatización</span>
-              </div>
-            </div>
-          </li>
-
-          <li class="job reveal">
-            <div class="job-meta">
-              <p class="mono job-date" data-i18n="exp.2.date">Sep 2024 — Abr 2025</p>
-              <p class="mono job-loc" data-i18n="exp.2.loc">Lima, Perú</p>
-            </div>
-            <div class="job-body">
-              <p class="job-company">Tharsis UNI <span class="job-type mono" data-i18n="exp.2.type">Equipo de rover</span></p>
-              <h3 class="job-role" data-i18n="exp.2.role">Área de Electrónica</h3>
-              <ul class="job-list">
-                <li data-i18n="exp.2.b1">Adquisición de datos y telemetría para el Rover HERC NASA 2025.</li>
-                <li data-i18n="exp.2.b2">Procesamiento de señales sensoriales en condiciones críticas.</li>
-              </ul>
-              <div class="tags">
-                <span data-i18n="exp.2.t1">Electrónica</span><span data-i18n="exp.2.t2">Telemetría</span><span>NASA HERC</span>
-              </div>
-            </div>
-          </li>
-        </ol>
+          </div>
+        </article>
       </div>
     </section>
 
-    <!-- ===================== EDUCATION ===================== -->
-    <section class="section" id="education">
+    <!-- ===================== JOURNEY (competitions & missions) ===================== -->
+    <section class="section" id="journey">
+      <div class="glow glow-a" aria-hidden="true"></div>
       <div class="container">
         <div class="section-head reveal">
-          <p class="label mono" data-i18n="edu.label">Formación</p>
-          <h2 class="section-title" data-i18n="edu.title">Educación y certificaciones</h2>
+          <p class="label mono" data-i18n="tl.label">Competencias y misiones</p>
+          <h2 class="section-title" data-i18n="tl.title">De Lambayeque a Nevada, Japón y la estratósfera</h2>
+          <p class="section-sub" data-i18n="tl.sub">Concursos internacionales y misiones en las que representé a la UNI y al Perú.</p>
         </div>
 
-        <div class="edu-grid">
-          <article class="edu-main reveal" data-reveal="left">
-            <p class="mono edu-date" data-i18n="edu.main.date">Abr 2022 — Actualidad</p>
-            <h3 class="edu-school">Universidad Nacional de Ingeniería</h3>
-            <p class="edu-degree" data-i18n="edu.main.degree">Ingeniería Mecatrónica · 10.º ciclo · Quinto superior</p>
-            <p class="edu-desc" data-i18n="edu.main.desc">IA, machine learning, sistemas embebidos y control automático. Representante de la UNI en NASA y ARLISS.</p>
-            <p class="mono edu-loc">Lima, Perú</p>
-          </article>
+        <ol class="journey">
+          <!-- NASA Space Apps 2024 -->
+          <li class="stop reveal">
+            <figure class="stop-media">
+              <button type="button" class="zoom" data-full="img/nasa-spaceapps-2024.jpg" aria-label="Ampliar foto">
+                <img src="img/nasa-spaceapps-2024.jpg" width="480" height="704" loading="lazy" style="object-position: 50% 62%" alt="Luis Fernando con sus compañeros de equipo mostrando las medallas de NASA Space Apps" data-i18n-alt="tl.1.alt">
+              </button>
+            </figure>
+            <div class="stop-body">
+              <p class="mono stop-when"><span data-i18n="tl.1.when">Octubre 2024</span><span class="stop-where" data-i18n="tl.1.where">Sede Lambayeque, Perú</span></p>
+              <p class="stop-badge" data-i18n="tl.1.badge">Nominado global · Única mención honrosa del Perú</p>
+              <h3 class="stop-title">NASA Space Apps Challenge 2024</h3>
+              <p class="stop-sub mono" data-i18n="tl.1.sub">Equipo QUASAR · proyecto Inti's Legacy</p>
+              <p data-i18n="tl.1.p1">Fue nuestra primera hackathon. En dos días creamos Inti's Legacy, un videojuego móvil para aprender a cuidar el medio ambiente con los protocolos científicos GLOBE de la NASA.</p>
+              <p data-i18n="tl.1.p2">Ganamos en la sede Lambayeque, donde recibimos medallas, y luego fuimos nominados globales con mención honrosa: el único proyecto del Perú con esa distinción, entre los 50 mejores de más de 15,000 equipos de 163 países.</p>
+              <a class="stop-link mono" href="https://andina.pe/ingles/noticia-nasa-otorga-mencion-honrosa-a-juego-movil-peruano-para-cuidar-medio-ambiente-1014276.aspx" target="_blank" rel="noopener" data-i18n="tl.1.link">Leer la noticia en Andina ↗</a>
+            </div>
+          </li>
 
-          <ol class="certs reveal">
-            <li class="cert">
-              <div><p class="mono cert-org">Stanford · Coursera</p><h3 class="cert-title" data-i18n="cert.1.title">Especialización en Machine Learning</h3></div>
-              <div class="cert-right"><p class="mono cert-date" data-i18n="cert.1.date">Sep 2024</p><a class="cert-link mono" href="https://www.coursera.org/account/accomplishments/specialization/3H2GJHUJX5FE" target="_blank" rel="noopener" data-i18n="cert.verify">Ver →</a></div>
-            </li>
-            <li class="cert">
-              <div><p class="mono cert-org">University of California, Davis</p><h3 class="cert-title">SQL for Data Science &amp; SQL Problem Solving</h3></div>
-              <div class="cert-right"><p class="mono cert-date" data-i18n="cert.2.date">Feb 2026</p></div>
-            </li>
-            <li class="cert">
-              <div><p class="mono cert-org">IBM</p><h3 class="cert-title">Deep Learning &amp; Neural Networks with Keras</h3></div>
-              <div class="cert-right"><p class="mono cert-date" data-i18n="cert.3.date">Feb 2026</p></div>
-            </li>
-            <li class="cert">
-              <div><p class="mono cert-org">Platzi</p><h3 class="cert-title" data-i18n="cert.4.title">Excel &amp; Power BI Avanzado</h3></div>
-              <div class="cert-right"><p class="mono cert-date" data-i18n="cert.4.date">May 2025</p></div>
-            </li>
-            <li class="cert">
-              <div><p class="mono cert-org">OTI – UNI</p><h3 class="cert-title" data-i18n="cert.5.title">Procesamiento de Imágenes con OpenCV</h3></div>
-              <div class="cert-right"><p class="mono cert-date" data-i18n="cert.5.date">Feb 2025</p></div>
-            </li>
-          </ol>
-        </div>
+          <!-- ARLISS 2025 -->
+          <li class="stop reveal">
+            <figure class="stop-media">
+              <button type="button" class="zoom" data-full="img/arliss-2025.jpg" aria-label="Ampliar foto">
+                <img src="img/arliss-2025.jpg" width="537" height="417" loading="lazy" alt="Equipo COSMIX con la bandera de la UNI y la del Perú en el desierto de Black Rock, Nevada" data-i18n-alt="tl.2.alt">
+              </button>
+            </figure>
+            <div class="stop-body">
+              <p class="mono stop-when"><span data-i18n="tl.2.when">Septiembre 2025</span><span class="stop-where" data-i18n="tl.2.where">Black Rock Desert, Nevada, EE. UU.</span></p>
+              <p class="stop-badge" data-i18n="tl.2.badge">4.º lugar internacional</p>
+              <h3 class="stop-title">ARLISS 2025</h3>
+              <p class="stop-sub mono" data-i18n="tl.2.sub">Equipo COSMIX · categoría CanSat Rover</p>
+              <p data-i18n="tl.2.p1">Con COSMIX, el equipo del laboratorio Smart Machines del CTIC UNI (hoy OTI), viajé a Nevada para nuestra primera competencia internacional. En ARLISS el rover sube en un cohete, desciende en paracaídas y tiene que llegar solo hasta una meta en el desierto.</p>
+              <p data-i18n="tl.2.p2">Lideré la integración de sistemas y la telemetría (captura, almacenamiento y transmisión de datos en tiempo real) y optimicé el control y el procesamiento de señales para que la navegación fuera robusta. Logramos el 4.º lugar internacional y fuimos el primer equipo peruano en la categoría CanSat Rover.</p>
+              <a class="stop-link mono" href="https://elheraldo.pe/robot-cansat-rover-de-la-uni-participa-en-competencia-internacional-en-nevada/" target="_blank" rel="noopener" data-i18n="tl.2.link">Leer la nota en El Heraldo ↗</a>
+            </div>
+          </li>
+
+          <!-- EO-SAT-1 -->
+          <li class="stop reveal">
+            <figure class="stop-media">
+              <button type="button" class="zoom" data-full="img/eo-sat-1-fap.jpg" aria-label="Ampliar foto">
+                <img src="img/eo-sat-1-fap.jpg" width="1280" height="852" loading="lazy" alt="Cadetes de la Fuerza Aérea del Perú y estudiantes de la UNI frente a la Escuela de Oficiales FAP" data-i18n-alt="tl.5.alt">
+              </button>
+            </figure>
+            <div class="stop-body">
+              <p class="mono stop-when"><span data-i18n="tl.5.when">Julio 2026</span><span class="stop-where" data-i18n="tl.5.where">FAP × UNI · Lima, Perú</span></p>
+              <p class="stop-badge" data-i18n="tl.5.badge">Misión estratosférica</p>
+              <h3 class="stop-title">EO-SAT-1</h3>
+              <p class="stop-sub mono" data-i18n="tl.5.sub">CubeSat a bordo de un globo estratosférico</p>
+              <p data-i18n="tl.5.p1">Misión desarrollada en conjunto por cadetes de la Escuela de Oficiales de la Fuerza Aérea del Perú y estudiantes de Ingeniería Mecatrónica de la UNI, con el apoyo de CONIDA (Agencia Espacial del Perú), One Voice 4 Change y el Comando Espacial y Ciberespacial (COMEC).</p>
+              <p data-i18n="tl.5.p2">Participamos en el diseño, la integración, las pruebas y el lanzamiento del sistema, validando tecnologías y procedimientos para llegar al espacio cercano. Con este lanzamiento, la Fuerza Aérea del Perú alcanzó la estratósfera por primera vez en su historia.</p>
+              <a class="stop-link mono" href="https://eofap.edu.pe/comunicacion/noticia/semana-cientifica2026-eofap" target="_blank" rel="noopener" data-i18n="tl.5.link">Leer la nota de la EOFAP ↗</a>
+            </div>
+          </li>
+
+          <!-- NSE 2026 Japan -->
+          <li class="stop reveal">
+            <figure class="stop-media">
+              <button type="button" class="zoom" data-full="img/nse-japon-2026.jpg" aria-label="Ampliar foto">
+                <img src="img/nse-japon-2026.jpg" width="800" height="600" loading="lazy" alt="Equipo COSMIX con cascos junto a la mascota del evento en el Noshiro Space Event, Japón" data-i18n-alt="tl.3.alt">
+              </button>
+            </figure>
+            <div class="stop-body">
+              <p class="mono stop-when"><span data-i18n="tl.3.when">Agosto 2026</span><span class="stop-where" data-i18n="tl.3.where">Noshiro, Akita, Japón</span></p>
+              <p class="stop-badge" data-i18n="tl.3.badge">Representación internacional</p>
+              <h3 class="stop-title" data-i18n="tl.3.title">22nd Noshiro Space Event</h3>
+              <p class="stop-sub mono" data-i18n="tl.3.sub">Equipo COSMIX · categoría CanSat Rover</p>
+              <p data-i18n="tl.3.p1">Un año después de Nevada llevamos una versión mejorada del rover a Japón, representando al Perú y a la UNI en la misma categoría. Compartimos ideas y proyectos con equipos japoneses y aprendimos de cómo trabajan.</p>
+              <p data-i18n="tl.3.p2">También conocimos de cerca la cultura japonesa y visitamos la Embajada del Perú en Japón, donde nos recibieron con mucha amabilidad.</p>
+              <a class="stop-link mono" href="https://www.gob.pe/institucion/rree/noticias/1432364-delegacion-de-la-uni-y-el-team-cosmix-participaron-con-exito-en-evento-tecnologico-de-japon" target="_blank" rel="noopener" data-i18n="tl.3.link">Leer la nota de la Cancillería ↗</a>
+            </div>
+          </li>
+
+          <!-- ARLISS 2026 -->
+          <li class="stop reveal">
+            <figure class="stop-media stop-media-doc">
+              <button type="button" class="zoom" data-full="img/certificado-arliss-2026.jpg" aria-label="Ampliar certificado">
+                <img src="img/certificado-arliss-2026.jpg" width="911" height="830" loading="lazy" alt="Certificado de UNISEC para Luis Fernando Varas Padilla, diseño de chasis, ARLISS 2026" data-i18n-alt="tl.4.alt">
+              </button>
+            </figure>
+            <div class="stop-body">
+              <p class="mono stop-when"><span data-i18n="tl.4.when">Septiembre 2026</span><span class="stop-where" data-i18n="tl.4.where">Apoyo desde Lima</span></p>
+              <p class="stop-badge" data-i18n="tl.4.badge">Certificado UNISEC · Diseño de chasis</p>
+              <h3 class="stop-title">ARLISS 2026</h3>
+              <p class="stop-sub mono" data-i18n="tl.4.sub">Equipo COSMIX · Black Rock Desert, Nevada</p>
+              <p data-i18n="tl.4.p1">COSMIX volvió a Black Rock del 13 al 18 de septiembre. Esta vez no viajé, pero apoyé al equipo desde Lima en el diseño del chasis del rover.</p>
+              <p data-i18n="tl.4.p2">El consorcio UNISEC (University Space Engineering Consortium) me entregó un certificado de reconocimiento como miembro del equipo por ese aporte.</p>
+              <a class="stop-link mono" href="https://www.facebook.com/reel/1423048486654413/" target="_blank" rel="noopener" data-i18n="tl.4.link">Ver el video en Facebook ↗</a>
+            </div>
+          </li>
+        </ol>
       </div>
     </section>
 
@@ -317,71 +392,106 @@
         <div class="section-head reveal">
           <p class="label mono" data-i18n="proj.label">Proyectos</p>
           <h2 class="section-title" data-i18n="proj.title">Proyectos destacados</h2>
+          <p class="section-sub" data-i18n="proj.sub">Robótica, control, visión artificial y datos: lo que construí y lo que aprendí en cada uno.</p>
         </div>
 
         <div class="projects">
 
           <article class="card card-wide card-featured reveal" data-tilt>
-            <div class="card-head">
-              <p class="mono card-sub" data-i18n="proj.3.sub">Electrónica &amp; Telemetría · Nevada, EE. UU.</p>
-              <span class="card-arrow" aria-hidden="true">↗</span>
-            </div>
             <div class="card-wide-grid">
-              <div>
-                <p class="card-impact" data-i18n="proj.3.impact">3.er lugar internacional</p>
-                <h3 class="card-title" data-i18n="proj.3.title">CanSat Rover — ARLISS 2025</h3>
-                <p class="card-desc" data-i18n="proj.3.desc">Electrónica y telemetría en tiempo real para navegar tras el descenso. Primer equipo peruano en la categoría.</p>
-                <div class="tags"><span data-i18n="proj.3.t1">Telemetría</span><span data-i18n="proj.3.t2">Sistemas embebidos</span><span>C/C++</span></div>
+              <div class="card-main">
+                <p class="mono card-num">01</p>
+                <p class="card-impact" data-i18n="proj.1.impact">4.º lugar ARLISS 2025 · Noshiro Space Event 2026</p>
+                <h3 class="card-title" data-i18n="proj.1.title">CanSat Rover autónomo — COSMIX</h3>
+                <p class="mono card-sub" data-i18n="proj.1.sub">Integración de sistemas · Telemetría · Control · Navegación</p>
+                <p class="card-desc" data-i18n="proj.1.desc">Rover tipo CanSat que se lanza en un cohete, desciende en paracaídas y navega de forma autónoma hasta una meta, guiado por su cámara y sus sensores ultrasónicos. Me encargué de la integración de sistemas y de la telemetría (captura, almacenamiento y transmisión de datos en tiempo real), y optimicé el control y el procesamiento de señales para la navegación.</p>
+                <p class="card-desc" data-i18n="proj.1.desc2">Compitió en ARLISS 2025 (4.º lugar internacional) y, en una versión mejorada, en el Noshiro Space Event 2026 en Japón. Para ARLISS 2026 apoyé el diseño del chasis.</p>
+                <div class="tags"><span data-i18n="proj.1.t1">Integración de sistemas</span><span data-i18n="proj.1.t2">Telemetría</span><span>C/C++</span><span data-i18n="proj.1.t4">Procesamiento de señales</span><span data-i18n="proj.1.t5">Diseño de chasis</span></div>
               </div>
-              <svg class="card-art card-art-lg" viewBox="0 0 300 180" aria-hidden="true">
-                <path d="M120 24 A60 60 0 0 1 240 24" class="draw"/>
-                <line x1="120" y1="24" x2="150" y2="70" class="dash draw"/>
-                <line x1="240" y1="24" x2="210" y2="70" class="dash draw"/>
-                <line x1="180" y1="24" x2="180" y2="70" class="dash draw"/>
-                <rect x="150" y="70" width="60" height="44" rx="6" class="draw"/>
-                <line x1="150" y1="84" x2="210" y2="84" class="draw"/>
-                <line x1="150" y1="100" x2="210" y2="100" class="draw"/>
-                <circle cx="156" cy="124" r="10" class="draw"/>
-                <circle cx="204" cy="124" r="10" class="draw"/>
-                <line x1="20" y1="150" x2="280" y2="150" class="draw"/>
-                <circle cx="60" cy="150" r="4" class="red"/>
-                <text x="48" y="168" class="art-label">TARGET</text>
-                <path d="M204 134 Q 140 150 72 150" class="dash draw"/>
-                <text x="222" y="60" class="art-label">RX/TX</text>
-                <path d="M216 56 A10 10 0 0 1 228 44" class="red-stroke draw"/>
-                <path d="M210 48 A18 18 0 0 1 232 36" class="red-stroke draw"/>
-              </svg>
+              <figure class="card-photo card-photo-lg">
+                <button type="button" class="zoom" data-full="img/proyecto-cansat-rover.jpg" aria-label="Ampliar foto">
+                  <img src="img/proyecto-cansat-rover.jpg" width="1080" height="675" loading="lazy" alt="CanSat rover del equipo COSMIX con ruedas de paletas, cámara y sensores ultrasónicos" data-i18n-alt="proj.1.alt">
+                </button>
+              </figure>
             </div>
           </article>
 
-          <article class="card reveal" data-tilt>
-            <div class="card-head">
-              <p class="mono card-sub" data-i18n="proj.1.sub">Control &amp; Data Pipeline</p>
-              <span class="card-arrow" aria-hidden="true">↗</span>
-            </div>
-            <h3 class="card-title" data-i18n="proj.1.title">Brazo Robótico Planar de 2 GDL</h3>
-            <p class="card-desc" data-i18n="proj.1.desc">Control PID + ROS 2 con pipeline de monitoreo en tiempo real para mejorar la precisión de trayectoria.</p>
-            <div class="tags"><span>ROS 2</span><span>PID</span><span>Python</span></div>
+          <article class="card has-photo reveal" data-tilt>
+            <figure class="card-photo">
+              <button type="button" class="zoom" data-full="img/proyecto-robot-2gdl.jpg" aria-label="Ampliar foto">
+                <img src="img/proyecto-robot-2gdl.jpg" width="1280" height="800" loading="lazy" style="object-position: 50% 0%" alt="Robot manipulador de 2 grados de libertad con su interfaz de cinemática en una laptop" data-i18n-alt="proj.2.alt">
+              </button>
+            </figure>
+            <p class="mono card-num">02</p>
+            <p class="mono card-sub" data-i18n="proj.2.sub">Control · Cinemática · ROS 2</p>
+            <h3 class="card-title" data-i18n="proj.2.title">Robot manipulador de 2 GDL</h3>
+            <p class="card-desc" data-i18n="proj.2.desc">Construimos un robot manipulador de 2 grados de libertad con una interfaz propia para su cinemática directa e inversa. Diseñé el control PID e integré ROS 2 para la comunicación modular y el procesamiento de datos en tiempo real; un pipeline de monitoreo de las variables me permitió analizar el desempeño del controlador y mejorar la precisión de la trayectoria.</p>
+            <div class="tags"><span>ROS 2</span><span>PID</span><span>Python</span><span data-i18n="proj.2.t4">Cinemática</span></div>
+          </article>
+
+          <article class="card has-photo reveal" data-tilt>
+            <figure class="card-photo card-photo-pixel">
+              <button type="button" class="zoom" data-full="img/proyecto-intis-legacy.jpg" aria-label="Ampliar imagen">
+                <img src="img/proyecto-intis-legacy.jpg" width="1024" height="640" loading="lazy" alt="Ilustración en pixel art del videojuego Inti's Legacy: un científico toma una muestra de agua" data-i18n-alt="proj.3.alt">
+              </button>
+            </figure>
+            <p class="mono card-num">03</p>
+            <p class="mono card-sub" data-i18n="proj.3.sub">Videojuego móvil · NASA Space Apps 2024</p>
+            <h3 class="card-title">Inti's Legacy</h3>
+            <p class="card-desc" data-i18n="proj.3.desc">Videojuego móvil en pixel art, hecho en Unity con el equipo QUASAR, que enseña a cuidar el medio ambiente con los protocolos científicos GLOBE de la NASA: recolectar muestras de suelo, analizar el agua y estudiar la biodiversidad. Fue el único proyecto del Perú con mención honrosa global en 2024.</p>
+            <a class="stop-link mono" href="https://sites.google.com/view/intislegacy/inicio" target="_blank" rel="noopener" data-i18n="proj.3.link">Ver la página del juego ↗</a>
+            <div class="tags"><span>Unity</span><span data-i18n="proj.3.t2">Diseño de juegos</span><span data-i18n="proj.3.t3">Gestión de proyectos</span></div>
+          </article>
+
+          <article class="card card-sm reveal" data-tilt>
             <svg class="card-art" viewBox="0 0 200 140" aria-hidden="true">
-              <line x1="20" y1="120" x2="180" y2="120" class="draw"/>
-              <path d="M70 120 L90 96 L110 120 Z" class="draw"/>
-              <line x1="90" y1="96" x2="130" y2="40" class="draw"/>
-              <line x1="130" y1="40" x2="176" y2="62" class="draw"/>
-              <circle cx="90" cy="96" r="6" class="fill draw"/>
-              <circle cx="130" cy="40" r="6" class="fill draw"/>
-              <circle cx="176" cy="62" r="5" class="red"/>
-              <path d="M40 100 A70 70 0 0 1 170 28" class="dash draw"/>
+              <path d="M30 40 V22 H48" class="draw"/><path d="M152 22 H170 V40" class="draw"/><path d="M170 100 V118 H152" class="draw"/><path d="M48 118 H30 V100" class="draw"/>
+              <circle cx="100" cy="70" r="28" class="draw"/>
+              <circle cx="100" cy="70" r="4" class="hot"/>
+              <line x1="100" y1="30" x2="100" y2="50" class="draw"/><line x1="100" y1="90" x2="100" y2="110" class="draw"/>
+              <line x1="60" y1="70" x2="80" y2="70" class="draw"/><line x1="120" y1="70" x2="140" y2="70" class="draw"/>
+              <rect x="128" y="86" width="34" height="22" class="hot-stroke draw"/>
             </svg>
+            <p class="mono card-num">04</p>
+            <p class="mono card-sub">Computer Vision</p>
+            <h3 class="card-title" data-i18n="proj.4.title">Visión artificial: OpenCV, YOLOv8 y SAM2</h3>
+            <p class="card-desc" data-i18n="proj.4.desc">Empecé con OpenCV en la formación de procesamiento de imágenes de la OTI-UNI: segmentación y seguimiento de objetos en video en tiempo real. Después, como proyecto personal, armé un toolkit que combina YOLOv8 para detectar objetos y SAM2 para segmentarlos con precisión.</p>
+            <div class="tags"><span>OpenCV</span><span>YOLOv8</span><span>SAM2</span><span>Python</span></div>
           </article>
 
-          <article class="card reveal" data-tilt>
-            <div class="card-head">
-              <p class="mono card-sub" data-i18n="proj.2.sub">Sensor Data Analysis</p>
-              <span class="card-arrow" aria-hidden="true">↗</span>
-            </div>
-            <h3 class="card-title" data-i18n="proj.2.title">Vehículo Agrícola Autónomo</h3>
-            <p class="card-desc" data-i18n="proj.2.desc">Análisis de datos de sensores para caracterizar y guiar un vehículo autónomo en campo.</p>
-            <div class="tags"><span data-i18n="proj.2.t1">Sensores</span><span>Python</span><span>IoT</span></div>
+          <article class="card card-sm reveal" data-tilt>
+            <svg class="card-art" viewBox="0 0 200 140" aria-hidden="true">
+              <path d="M100 16 C100 16 66 56 66 80 a34 34 0 0 0 68 0 C134 56 100 16 100 16 Z" class="draw"/>
+              <path d="M82 86 a18 18 0 0 0 14 16" class="dash draw"/>
+              <polyline points="18,122 46,108 70,114 96,96 122,102 150,82 182,88" class="hot-stroke draw"/>
+              <g class="dash"><line x1="18" y1="128" x2="182" y2="128"/></g>
+            </svg>
+            <p class="mono card-num">05</p>
+            <p class="mono card-sub" data-i18n="proj.5.sub">Datos · Machine Learning · Reto EY</p>
+            <h3 class="card-title" data-i18n="proj.5.title">Predicción de la calidad del agua</h3>
+            <p class="card-desc" data-i18n="proj.5.desc">Con solo las coordenadas y la fecha y hora de cada punto, integré y depuré más de 737 000 registros de fuentes externas (satélite, clima y suelo). Construí variables con rezagos, medias móviles y ratios, apliqué validación temporal para evitar fuga de datos y comparé modelos de regresión en 9 experimentos versionados en MLflow. Los resultados se ven en Power BI y en un dashboard en Streamlit.</p>
+            <div class="tags"><span>Python</span><span>Scikit-Learn</span><span>MLflow</span><span>Power BI</span><span>Streamlit</span></div>
+          </article>
+
+          <article class="card card-sm reveal" data-tilt>
+            <svg class="card-art" viewBox="0 0 200 140" aria-hidden="true">
+              <rect x="22" y="58" width="44" height="58" class="draw"/>
+              <path d="M66 74 H104 V96 H134" class="draw"/>
+              <rect x="134" y="80" width="44" height="36" class="draw"/>
+              <circle cx="44" cy="40" r="10" class="dash draw"/>
+              <line x1="44" y1="50" x2="44" y2="58" class="draw"/>
+              <g class="dash"><line x1="30" y1="72" x2="58" y2="72"/><line x1="30" y1="84" x2="58" y2="84"/><line x1="30" y1="96" x2="58" y2="96"/></g>
+              <circle cx="156" cy="58" r="8" class="hot"/>
+              <path d="M156 66 V80" class="hot-stroke draw"/>
+            </svg>
+            <p class="mono card-num">06</p>
+            <p class="mono card-sub" data-i18n="proj.6.sub">Industria 4.0 · Reto técnico</p>
+            <h3 class="card-title" data-i18n="proj.6.title">Predicción de calidad en una planta de flotación</h3>
+            <p class="card-desc" data-i18n="proj.6.desc">Sistema predictivo de punta a punta con datos públicos de los instrumentos de una planta real de flotación de hierro (flujos de aire, niveles, pH) para anticipar la calidad del concentrado. Incluye la interpretación del modelo con SHAP, un agente de IA en LangGraph y una API en FastAPI.</p>
+            <div class="tags"><span>Python</span><span>SHAP</span><span>LangGraph</span><span>FastAPI</span></div>
+          </article>
+
+          <article class="card card-sm reveal" data-tilt>
             <svg class="card-art" viewBox="0 0 200 140" aria-hidden="true">
               <line x1="10" y1="118" x2="190" y2="118" class="draw"/>
               <g class="dash"><line x1="20" y1="118" x2="20" y2="106"/><line x1="36" y1="118" x2="36" y2="104"/><line x1="52" y1="118" x2="52" y2="108"/><line x1="150" y1="118" x2="150" y2="106"/><line x1="166" y1="118" x2="166" y2="104"/><line x1="182" y1="118" x2="182" y2="108"/></g>
@@ -390,91 +500,117 @@
               <circle cx="84" cy="104" r="12" class="draw"/>
               <circle cx="130" cy="104" r="12" class="draw"/>
               <line x1="110" y1="52" x2="110" y2="30" class="draw"/>
-              <circle cx="110" cy="28" r="3" class="red"/>
+              <circle cx="110" cy="28" r="3" class="hot"/>
               <path d="M98 22 A16 16 0 0 1 122 22" class="dash draw"/>
               <path d="M90 14 A26 26 0 0 1 130 14" class="dash draw"/>
             </svg>
-          </article>
-
-          <article class="card reveal" data-tilt>
-            <div class="card-head">
-              <p class="mono card-sub">Computer Vision</p>
-              <span class="card-arrow" aria-hidden="true">↗</span>
-            </div>
-            <h3 class="card-title" data-i18n="proj.4.title">Visión Artificial con OpenCV</h3>
-            <p class="card-desc" data-i18n="proj.4.desc">Segmentación y seguimiento de objetos en video en tiempo real para monitoreo.</p>
-            <div class="tags"><span>OpenCV</span><span>Python</span></div>
-            <svg class="card-art" viewBox="0 0 200 140" aria-hidden="true">
-              <path d="M30 40 V22 H48" class="draw"/><path d="M152 22 H170 V40" class="draw"/><path d="M170 100 V118 H152" class="draw"/><path d="M48 118 H30 V100" class="draw"/>
-              <circle cx="100" cy="70" r="28" class="draw"/>
-              <circle cx="100" cy="70" r="4" class="red"/>
-              <line x1="100" y1="30" x2="100" y2="50" class="draw"/><line x1="100" y1="90" x2="100" y2="110" class="draw"/>
-              <line x1="60" y1="70" x2="80" y2="70" class="draw"/><line x1="120" y1="70" x2="140" y2="70" class="draw"/>
-              <rect x="128" y="86" width="34" height="22" class="red-stroke draw"/>
-            </svg>
-          </article>
-
-          <article class="card reveal" data-tilt>
-            <div class="card-head">
-              <p class="mono card-sub" data-i18n="proj.5.sub">Juego educativo · NASA Space Apps 2024</p>
-              <span class="card-arrow" aria-hidden="true">↗</span>
-            </div>
-            <p class="card-impact" data-i18n="proj.5.impact">Top 50 mundial</p>
-            <h3 class="card-title">Inti's Legacy</h3>
-            <p class="card-desc" data-i18n="proj.5.desc">Juego educativo sobre el cuidado del agua, entre más de 15,000 equipos.</p>
-            <div class="tags"><span data-i18n="proj.5.t1">Diseño de juegos</span><span data-i18n="proj.5.t3">Gestión de proyectos</span></div>
-            <a class="card-link mono" href="https://andina.pe/agencia/noticia-nasa-otorga-mencion-honrosa-a-juego-movil-peruano-para-cuidar-medio-ambiente-1014276.aspx" target="_blank" rel="noopener" data-i18n="proj.5.link">Ver noticia →</a>
-            <svg class="card-art" viewBox="0 0 200 140" aria-hidden="true">
-              <path d="M100 18 C100 18 62 62 62 86 a38 38 0 0 0 76 0 C138 62 100 18 100 18 Z" class="draw"/>
-              <path d="M78 92 a22 22 0 0 0 16 20" class="dash draw"/>
-              <path d="M94 76 L116 88 L94 100 Z" class="red"/>
-              <g class="dash"><line x1="150" y1="30" x2="180" y2="30"/><line x1="150" y1="44" x2="172" y2="44"/><line x1="150" y1="58" x2="186" y2="58"/></g>
-            </svg>
+            <p class="mono card-num">07</p>
+            <p class="mono card-sub" data-i18n="proj.7.sub">Sensor Data Analysis</p>
+            <h3 class="card-title" data-i18n="proj.7.title">Vehículo agrícola autónomo</h3>
+            <p class="card-desc" data-i18n="proj.7.desc">Adquisición y análisis de datos de sensores para caracterizar el comportamiento de un vehículo autónomo en campo y apoyar su navegación, con el procesamiento y análisis hechos en Python.</p>
+            <div class="tags"><span data-i18n="proj.7.t1">Sensores</span><span>Python</span><span>IoT</span></div>
           </article>
 
         </div>
       </div>
     </section>
 
-    <!-- ===================== AWARDS ===================== -->
-    <section class="section section-dark" id="awards">
-      <div class="sec-grid" aria-hidden="true"></div>
+    <!-- ===================== AWARDS & EDUCATION ===================== -->
+    <section class="section" id="awards">
       <div class="glow glow-b" aria-hidden="true"></div>
       <div class="container">
         <div class="section-head reveal">
-          <p class="label mono" data-i18n="awards.label">Logros</p>
-          <h2 class="section-title" data-i18n="awards.title">Reconocimientos internacionales</h2>
+          <p class="label mono" data-i18n="awards.label">Reconocimientos</p>
+          <h2 class="section-title" data-i18n="awards.title">Reconocimientos y formación</h2>
+          <p class="section-sub" data-i18n="awards.sub">Toca cualquier imagen para verla completa.</p>
         </div>
 
-        <div class="awards">
-          <article class="award reveal" data-reveal="scale">
-            <p class="mono award-org">NASA Space Apps Challenge 2024</p>
-            <p class="award-big">Top 50</p>
-            <p class="award-sub" data-i18n="awards.1.sub">mundial · +15,000 equipos</p>
-            <p class="award-detail" data-i18n="awards.1.detail">Mención Honrosa Global · 163 países</p>
-            <a class="award-link mono" href="https://andina.pe/agencia/noticia-nasa-otorga-mencion-honrosa-a-juego-movil-peruano-para-cuidar-medio-ambiente-1014276.aspx" target="_blank" rel="noopener" data-i18n="awards.1.link">Leer la noticia →</a>
-          </article>
-
-          <article class="award reveal" data-reveal="scale">
-            <p class="mono award-org" data-i18n="awards.2.org">ARLISS 2025 · Nevada, EE. UU.</p>
-            <p class="award-big" data-i18n="awards.2.big">3.er lugar</p>
-            <p class="award-sub" data-i18n="awards.2.sub">internacional · CanSat Rover</p>
-            <p class="award-detail" data-i18n="awards.2.detail">Primer equipo peruano en la categoría</p>
-          </article>
+        <div class="gallery">
+          <figure class="shot reveal">
+            <button type="button" class="zoom" data-full="img/diploma-honor-uni.jpg" aria-label="Ampliar diploma">
+              <img src="img/diploma-honor-uni.jpg" width="1400" height="897" loading="lazy" alt="Diploma de Honor de la UNI y medalla al mérito otorgados a Luis Fernando Varas Padilla" data-i18n-alt="awards.1.alt">
+            </button>
+            <figcaption>
+              <span class="mono shot-k" data-i18n="awards.1.k">UNI · Facultad de Ing. Mecánica · Mar 2025</span>
+              <span class="shot-t" data-i18n="awards.1.t">Diploma de Honor y medalla al mérito</span>
+              <span class="shot-d" data-i18n="awards.1.d">Por alcanzar el 3.er puesto en el promedio ponderado del año 2024 en la Facultad.</span>
+            </figcaption>
+          </figure>
+          <figure class="shot reveal">
+            <button type="button" class="zoom" data-full="img/certificado-nasa-spaceapps.jpg" aria-label="Ampliar certificado">
+              <img src="img/certificado-nasa-spaceapps.jpg" width="1303" height="848" loading="lazy" alt="Certificado y medalla de NASA International Space Apps Challenge, sede Lambayeque" data-i18n-alt="awards.2.alt">
+            </button>
+            <figcaption>
+              <span class="mono shot-k" data-i18n="awards.2.k">NASA Space Apps · Lambayeque · Oct 2024</span>
+              <span class="shot-t" data-i18n="awards.2.t">Certificado y medalla de NASA Space Apps</span>
+              <span class="shot-d" data-i18n="awards.2.d">Por el desempeño destacado en la competencia internacional, sede Lambayeque.</span>
+            </figcaption>
+          </figure>
+          <figure class="shot reveal">
+            <button type="button" class="zoom" data-full="img/nasa-mencion-honrosa.jpg" aria-label="Ampliar imagen">
+              <img src="img/nasa-mencion-honrosa.jpg" width="800" height="800" loading="lazy" alt="Anuncio de mención honrosa para el proyecto QUASAR en NASA Space Apps Lambayeque" data-i18n-alt="awards.3.alt">
+            </button>
+            <figcaption>
+              <span class="mono shot-k" data-i18n="awards.3.k">NASA Space Apps 2024</span>
+              <span class="shot-t" data-i18n="awards.3.t">Mención honrosa global</span>
+              <span class="shot-d" data-i18n="awards.3.d">Equipo QUASAR: el único proyecto del Perú con mención honrosa en 2024.</span>
+            </figcaption>
+          </figure>
+          <figure class="shot reveal">
+            <button type="button" class="zoom" data-full="img/certificado-arliss-2026.jpg" aria-label="Ampliar certificado">
+              <img src="img/certificado-arliss-2026.jpg" width="911" height="830" loading="lazy" alt="Certificado de UNISEC por diseño de chasis en ARLISS 2026" data-i18n-alt="awards.4.alt">
+            </button>
+            <figcaption>
+              <span class="mono shot-k" data-i18n="awards.4.k">UNISEC · Oct 2026</span>
+              <span class="shot-t" data-i18n="awards.4.t">Certificado ARLISS 2026 · Diseño de chasis</span>
+              <span class="shot-d" data-i18n="awards.4.d">Como miembro del equipo COSMIX, por el apoyo desde Lima.</span>
+            </figcaption>
+          </figure>
         </div>
 
-        <div class="stats reveal" id="stats">
-          <div><p class="stat-n"><span class="num" data-count="15000" data-format="comma">15,000</span><span class="sup">+</span></p><p class="stat-k mono" data-i18n="stats.1">equipos · NASA Space Apps</p></div>
-          <div><p class="stat-n"><span class="num" data-count="163">163</span></p><p class="stat-k mono" data-i18n="stats.2">países</p></div>
-          <div><p class="stat-n"><span class="num" data-count="1">1</span><span class="sup" data-i18n="stats.3sup">.er</span></p><p class="stat-k mono" data-i18n="stats.3">equipo peruano · CanSat Rover</p></div>
-          <div><p class="stat-n"><span class="num" data-count="10">10</span><span class="sup" data-i18n="stats.4sup">.º</span></p><p class="stat-k mono" data-i18n="stats.4">ciclo · último año</p></div>
+        <div class="edu-grid">
+          <article class="edu-main reveal">
+            <p class="mono edu-date" data-i18n="edu.date">Abr 2022 — Dic 2026 (egreso)</p>
+            <h3 class="edu-school">Universidad Nacional de Ingeniería</h3>
+            <p class="edu-degree" data-i18n="edu.degree">Ingeniería Mecatrónica · 10.º ciclo · Tercio superior</p>
+            <p class="edu-desc" data-i18n="edu.desc">Formación en control automático, sistemas embebidos, robótica, automatización industrial e inteligencia artificial. Diploma de Honor por el 3.er puesto en el promedio ponderado 2024 de la Facultad de Ingeniería Mecánica. Represento a la universidad en concursos internacionales: NASA Space Apps, ARLISS y el Noshiro Space Event.</p>
+            <p class="mono edu-loc">Lima, Perú</p>
+          </article>
+
+          <ol class="certs reveal">
+            <li class="cert">
+              <p class="mono cert-org">Stanford · Coursera · <span data-i18n="cert.1.date">Sep 2024</span></p>
+              <h3 class="cert-title" data-i18n="cert.1.title">Especialización en Machine Learning</h3>
+              <p class="cert-desc" data-i18n="cert.1.desc">Aprendizaje supervisado y no supervisado, sistemas de recomendación y redes neuronales.</p>
+              <a class="cert-link mono" href="https://www.coursera.org/account/accomplishments/specialization/3H2GJHUJX5FE" target="_blank" rel="noopener" data-i18n="cert.verify">Ver credencial ↗</a>
+            </li>
+            <li class="cert">
+              <p class="mono cert-org">UC Davis · <span data-i18n="cert.2.date">Feb 2026</span></p>
+              <h3 class="cert-title">SQL for Data Science &amp; SQL Problem Solving</h3>
+              <p class="cert-desc" data-i18n="cert.2.desc">Bases de datos relacionales y consultas SQL complejas para extraer, transformar y analizar datos.</p>
+            </li>
+            <li class="cert">
+              <p class="mono cert-org">IBM · <span data-i18n="cert.3.date">Feb 2026</span></p>
+              <h3 class="cert-title">Deep Learning &amp; Neural Networks with Keras</h3>
+              <p class="cert-desc" data-i18n="cert.3.desc">Diseño y entrenamiento de modelos de deep learning con Keras para modelos predictivos.</p>
+            </li>
+            <li class="cert">
+              <p class="mono cert-org">Platzi · <span data-i18n="cert.4.date">May 2025</span></p>
+              <h3 class="cert-title" data-i18n="cert.4.title">Excel &amp; Power BI avanzado</h3>
+              <p class="cert-desc" data-i18n="cert.4.desc">Power Query, tablas dinámicas y dashboards para reportes y toma de decisiones.</p>
+            </li>
+            <li class="cert">
+              <p class="mono cert-org">OTI – UNI · <span data-i18n="cert.5.date">Feb 2025</span></p>
+              <h3 class="cert-title" data-i18n="cert.5.title">Procesamiento de imágenes con OpenCV</h3>
+              <p class="cert-desc" data-i18n="cert.5.desc">Visión artificial para segmentación, reconocimiento y seguimiento de objetos.</p>
+            </li>
+          </ol>
         </div>
       </div>
     </section>
 
     <!-- ===================== SKILLS ===================== -->
-    <section class="section section-red" id="skills">
-      <div class="sec-grid" aria-hidden="true"></div>
+    <section class="section section-alt" id="skills">
       <div class="container">
         <div class="section-head reveal">
           <p class="label mono" data-i18n="skills.label">Habilidades</p>
@@ -483,20 +619,34 @@
 
         <div class="skills">
           <div class="skill-group reveal">
-            <h3 class="mono" data-i18n="skills.g1">Robótica y sistemas</h3>
-            <div class="chips"><span>ROS / ROS 2</span><span data-i18n="skills.g1.pid">Control PID</span><span data-i18n="skills.g1.emb">Sistemas embebidos</span><span data-i18n="skills.g1.tel">Telemetría</span><span>IoT</span><span>C/C++</span><span>MATLAB</span><span>Linux</span><span>Git / GitHub</span></div>
+            <span class="skill-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.5"/><circle cx="12" cy="8" r="2.5"/><path d="M7.5 16l3.2-5.8M14.3 9.2L20 12"/><path d="M3 21h8"/></svg></span>
+            <h3 data-i18n="skills.g1">Robótica y control</h3>
+            <div class="chips"><span>ROS / ROS 2</span><span data-i18n="skills.g1.pid">Control PID</span><span data-i18n="skills.g1.odo">Odometría LiDAR</span><span>KISS-ICP</span><span data-i18n="skills.g1.kin">Cinemática</span><span>MATLAB</span></div>
           </div>
           <div class="skill-group reveal">
-            <h3 class="mono" data-i18n="skills.g2">Visión e IA</h3>
-            <div class="chips"><span>OpenCV</span><span>Machine Learning</span><span>Deep Learning</span><span>TensorFlow</span><span>Keras</span><span data-i18n="skills.g2.nn">Redes neuronales</span><span data-i18n="skills.g2.pred">Modelado predictivo</span></div>
+            <span class="skill-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="1.5"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg></span>
+            <h3 data-i18n="skills.g2">Embebidos y electrónica</h3>
+            <div class="chips"><span data-i18n="skills.g2.int">Integración de sistemas</span><span data-i18n="skills.g2.tel">Telemetría</span><span data-i18n="skills.g2.daq">Adquisición de datos</span><span data-i18n="skills.g2.sen">Sensores e instrumentación</span><span>IoT</span><span>C/C++</span></div>
           </div>
           <div class="skill-group reveal">
-            <h3 class="mono" data-i18n="skills.g3">Lenguajes y datos</h3>
-            <div class="chips"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Scikit-Learn</span><span>SQL</span><span>PostgreSQL</span><span>Power BI</span><span>Tableau</span><span data-i18n="skills.g3.excel">Excel avanzado</span></div>
+            <span class="skill-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></span>
+            <h3 data-i18n="skills.g3">Visión e IA</h3>
+            <div class="chips"><span>OpenCV</span><span>YOLOv8</span><span>SAM2</span><span>Machine Learning</span><span>Deep Learning</span><span>TensorFlow / Keras</span><span>LangGraph</span></div>
           </div>
           <div class="skill-group reveal">
-            <h3 class="mono" data-i18n="skills.g4">Gestión</h3>
-            <div class="chips"><span>SCRUM</span><span>Jira / Trello</span><span data-i18n="skills.g4.pm">Gestión de proyectos</span><span data-i18n="skills.g4.kpi">Análisis de KPIs</span><span>Dashboards</span><span data-i18n="skills.g4.rep">Reporting ejecutivo</span></div>
+            <span class="skill-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
+            <h3 data-i18n="skills.g4">Datos y analítica</h3>
+            <div class="chips"><span>Pandas</span><span>NumPy</span><span>Scikit-Learn</span><span>SQL / PostgreSQL</span><span>Power BI</span><span>Tableau</span><span>MLflow</span><span>Streamlit</span><span data-i18n="skills.g4.excel">Excel avanzado</span></div>
+          </div>
+          <div class="skill-group reveal">
+            <span class="skill-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></span>
+            <h3 data-i18n="skills.g5">Lenguajes y herramientas</h3>
+            <div class="chips"><span>Python</span><span>C/C++</span><span>SQL</span><span>MATLAB</span><span>Linux</span><span>Git / GitHub</span><span>FastAPI</span><span>Unity</span><span>Amazon S3</span></div>
+          </div>
+          <div class="skill-group reveal">
+            <span class="skill-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18.5 14.5A6.5 6.5 0 0 1 21.5 20"/></svg></span>
+            <h3 data-i18n="skills.g6">Gestión e idiomas</h3>
+            <div class="chips"><span>SCRUM</span><span>Jira / Trello</span><span data-i18n="skills.g6.pm">Gestión de proyectos</span><span data-i18n="skills.g6.team">Equipos multidisciplinarios</span><span data-i18n="skills.g6.es">Español nativo</span><span data-i18n="skills.g6.en">Inglés intermedio-avanzado</span></div>
           </div>
         </div>
       </div>
@@ -504,15 +654,17 @@
 
     <!-- ===================== CONTACT ===================== -->
     <section class="section contact" id="contact">
-      <div class="sec-grid" aria-hidden="true"></div>
       <div class="glow glow-c" aria-hidden="true"></div>
       <div class="container">
         <div class="contact-grid">
-          <div class="reveal" data-reveal="left">
+          <div class="contact-cta reveal">
             <p class="label mono" data-i18n="contact.label">Contacto</p>
-            <h2 class="contact-title" data-i18n="contact.title">Hablemos.</h2>
-            <p class="contact-sub" data-i18n="contact.sub">¿Prácticas, proyecto o pregunta? Escríbeme.</p>
-            <a href="mailto:luis.varas.p@uni.pe" class="btn btn-red btn-lg" data-i18n="contact.cta">Enviar correo</a>
+            <h2 class="contact-title" data-i18n="contact.title">Construyamos algo juntos.</h2>
+            <p class="contact-sub" data-i18n="contact.sub">¿Prácticas, un proyecto o una pregunta? Escríbeme y te respondo pronto.</p>
+            <div class="hero-ctas">
+              <a href="mailto:luis.varas.p@uni.pe" class="btn btn-primary btn-lg" data-i18n="contact.cta">Enviar correo ↗</a>
+              <a href="CV_FERNANDO_VARAS.docx" class="btn btn-ghost btn-lg" download data-i18n="hero.cta2">Descargar CV ↓</a>
+            </div>
           </div>
 
           <ul class="contact-list reveal">
@@ -530,6 +682,11 @@
               <span class="mono ck">LinkedIn</span>
               <a class="cv" href="https://www.linkedin.com/in/luisfvp/" target="_blank" rel="noopener">linkedin.com/in/luisfvp</a>
               <button type="button" class="copy mono" data-copy="https://www.linkedin.com/in/luisfvp/" data-i18n="contact.copy">Copiar</button>
+            </li>
+            <li>
+              <span class="mono ck">GitHub</span>
+              <a class="cv" href="https://github.com/FernandoVaras" target="_blank" rel="noopener">github.com/FernandoVaras</a>
+              <button type="button" class="copy mono" data-copy="https://github.com/FernandoVaras" data-i18n="contact.copy">Copiar</button>
             </li>
             <li>
               <span class="mono ck" data-i18n="contact.k4">Ubicación</span>
@@ -550,9 +707,15 @@
     </div>
   </footer>
 
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Imagen ampliada">
+    <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Cerrar">✕</button>
+    <img id="lightboxImg" src="" alt="">
+  </div>
+
   <div class="toast mono" id="toast" role="status" aria-live="polite"></div>
 
-  <script src="js/i18n.js?v=7"></script>
-  <script src="js/main.js?v=7"></script>
+  <script src="js/i18n.js?v=9"></script>
+  <script src="js/main.js?v=9"></script>
 </body>
 </html>
