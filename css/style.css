@@ -445,7 +445,8 @@ html.js .reveal.in .card-art .dash.draw { opacity: 0.75; }
 .projects { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 1.2rem; perspective: 1200px; }
 .projects > .card { grid-column: span 4; }
 .projects > .card.has-photo { grid-column: span 6; }
-.projects > .card.card-sm { grid-column: span 3; }
+.projects > .card.card-sm { grid-column: span 4; }
+.card-sm .card-photo .zoom { aspect-ratio: 16 / 9; }
 .projects > .card.card-wide { grid-column: 1 / -1; }
 .card { display: flex; flex-direction: column; gap: 0.8rem; padding: 1.6rem 1.5rem 1.7rem; border-radius: var(--radius); border: 1px solid var(--line); background: var(--surface); transform-style: preserve-3d; transition: border-color 0.5s, transform 0.6s var(--ease-out), box-shadow 0.5s, background-color 0.5s; }
 .card.is-tilting { transition: border-color 0.5s, transform 0.12s ease, box-shadow 0.5s, background-color 0.5s; }
