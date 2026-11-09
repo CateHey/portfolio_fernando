@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
-  <link rel="stylesheet" href="css/style.css?v=11">
+  <link rel="stylesheet" href="css/style.css?v=12">
   <script>document.documentElement.classList.replace('no-js','js');</script>
   <script type="application/ld+json">
   {
@@ -30,7 +30,7 @@
     "email": "mailto:luis.varas.p@uni.pe",
     "telephone": "+51959503106",
     "sameAs": ["https://www.linkedin.com/in/luisfvp/", "https://github.com/FernandoVaras"],
-    "knowsAbout": ["Mecatrónica", "Robótica", "ROS 2", "Control PID", "Sistemas embebidos", "Telemetría", "CanSat", "Visión artificial", "Machine Learning", "Python", "C/C++"]
+    "knowsAbout": ["Mecatrónica", "Robótica", "ROS 2", "Control PID", "Sistemas embebidos", "CanSat", "Visión artificial", "Machine Learning", "Python", "C/C++"]
   }
   </script>
 </head>
@@ -217,9 +217,8 @@
           <p class="label mono" data-i18n="about.label">Sobre mí</p>
           <h2 class="section-title" data-i18n="about.title">Me gustan los retos nuevos, con hardware o con datos</h2>
           <p data-i18n="about.p1">Soy estudiante de último ciclo de Ingeniería Mecatrónica en la Universidad Nacional de Ingeniería (UNI), en el tercio superior, y egreso en diciembre de 2026. En 2024 obtuve el tercer puesto en el promedio ponderado de la Facultad de Ingeniería Mecánica, reconocimiento por el que recibí un Diploma de Honor y la medalla al mérito.</p>
-          <p data-i18n="about.p2">Lo que más me mueve son los retos nuevos, por todo lo que se aprende en el camino. Me atraen los proyectos físicos: el CanSat rover que llevamos al desierto de Nevada y luego a Japón, las hackathons o la misión con globo estratosférico junto a la Fuerza Aérea del Perú. Pero disfruto igual los retos de software. En el reto de EY tuve que predecir la calidad del agua partiendo solo de coordenadas y fechas, y conseguir el resto de los datos (satélite, clima y suelo) desde fuentes y APIs externas; en otro reto usé machine learning para anticipar la calidad del concentrado en una planta de flotación de hierro.</p>
-          <p data-i18n="about.p3">En Multipacha 4.0 pasé más de un año en el equipo de robótica: probé y mejoré algoritmos de odometría LiDAR, simulé en Unity dónde colocar los equipos y armé el registro continuo de los datos de campo hacia la nube.</p>
-          <p class="goal"><span class="mono goal-k" data-i18n="about.goal.k">Lo que busco</span><span class="goal-v" data-i18n="about.goal.v">Prácticas donde pueda seguir aprendiendo y asumir retos nuevos, ya sea en robótica, automatización, datos e IA o en cualquier problema interesante que haya que resolver.</span></p>
+          <p data-i18n="about.p2">Me mueven los retos nuevos, por todo lo que se aprende en el camino. Disfruto tanto los proyectos físicos (un CanSat rover en Nevada y Japón, una misión estratosférica con la FAP, hackathons) como los de software, donde uso machine learning para predecir, por ejemplo, la calidad del agua o la de un concentrado minero.</p>
+          <p class="goal"><span class="mono goal-k" data-i18n="about.goal.k">Lo que busco</span><span class="goal-v" data-i18n="about.goal.v">Prácticas donde pueda seguir aprendiendo y asumir retos nuevos, ya sea en robótica, automatización o datos e IA.</span></p>
         </div>
 
         <div class="stats reveal" id="stats">
@@ -269,15 +268,29 @@
           <div class="job-body">
             <h3 class="job-role" data-i18n="exp.1.role">Practicante en Tecnología y Transformación Digital</h3>
             <p class="job-intro" data-i18n="exp.1.intro">Trabajé en el equipo de robótica, en sistemas que se prueban en campo con sensores reales: desde el software en ROS 2 hasta los datos que generan.</p>
-            <ul class="job-list">
-              <li data-i18n="exp.1.b1">Desarrollé y mantuve componentes en ROS 2 y Python para los sistemas robóticos de pruebas de campo, automatizando flujos que antes dependían de intervención manual.</li>
-              <li data-i18n="exp.1.b2">Probé y comparé el rendimiento de distintos algoritmos de reconstrucción y odometría con LiDAR (variantes de ICP) para elegir el más preciso, y trabajé en el mejoramiento del algoritmo de odometría (KISS-ICP) en C++ para estimar mejor el movimiento del robot, integrándolo como paquete de ROS 2.</li>
-              <li data-i18n="exp.1.b3">Simulé en Unity los equipos y su entorno para evaluar distintas ubicaciones y determinar dónde instalarlos para que rindieran mejor.</li>
-              <li data-i18n="exp.1.b4">Diseñé los pipelines y la arquitectura de datos de sensores y actuadores, con mensajería en tiempo real, trazabilidad y consistencia de la información.</li>
-              <li data-i18n="exp.1.b5">Desarrollé un sistema embebido de registro continuo que graba los datos de los sensores durante las pruebas de campo y los sube automáticamente a Amazon S3, dejando cada sesión disponible en la nube sin pasos manuales.</li>
-              <li data-i18n="exp.1.b6">Escalé pipelines robóticos modulares mediante refactorización y estandarización, lo que mejoró la mantenibilidad y la reutilización de módulos.</li>
-              <li data-i18n="exp.1.b7">Ejecuté pruebas funcionales y elaboré reportes técnicos de desempeño con recomendaciones para el equipo.</li>
-            </ul>
+            <div class="job-areas">
+              <div class="job-area">
+                <p class="mono job-area-k" data-i18n="exp.1.a1">Robótica y algoritmos</p>
+                <ul class="job-list">
+                  <li data-i18n="exp.1.b1">Desarrollé componentes en ROS 2 y Python para los robots de pruebas de campo y automaticé flujos que antes eran manuales.</li>
+                  <li data-i18n="exp.1.b2">Comparé el rendimiento de algoritmos de odometría con LiDAR (variantes de ICP) y trabajé en el mejoramiento del algoritmo (KISS-ICP) en C++, integrado en ROS 2.</li>
+                </ul>
+              </div>
+              <div class="job-area">
+                <p class="mono job-area-k" data-i18n="exp.1.a2">Datos y nube</p>
+                <ul class="job-list">
+                  <li data-i18n="exp.1.b3">Diseñé los pipelines de datos de sensores y actuadores en tiempo real, con trazabilidad y consistencia de la información.</li>
+                  <li data-i18n="exp.1.b4">Construí un sistema embebido que graba los datos de campo de forma continua y los sube automáticamente a Amazon S3.</li>
+                </ul>
+              </div>
+              <div class="job-area">
+                <p class="mono job-area-k" data-i18n="exp.1.a3">Simulación y pruebas</p>
+                <ul class="job-list">
+                  <li data-i18n="exp.1.b5">Simulé en Unity el entorno de trabajo para decidir dónde ubicar los equipos y que rindieran mejor.</li>
+                  <li data-i18n="exp.1.b6">Ejecuté pruebas funcionales y elaboré reportes técnicos de desempeño para el equipo.</li>
+                </ul>
+              </div>
+            </div>
             <div class="tags">
               <span>ROS 2</span><span>C++</span><span>Python</span><span>LiDAR · ICP</span><span>Unity</span><span>Amazon S3</span><span>Linux</span><span data-i18n="exp.1.t8">Pipelines de datos</span>
             </div>
@@ -328,7 +341,7 @@
               <h3 class="stop-title">ARLISS 2025</h3>
               <p class="stop-sub mono" data-i18n="tl.2.sub">Equipo COSMIX · categoría CanSat Rover</p>
               <p data-i18n="tl.2.p1">Con COSMIX, el equipo del laboratorio Smart Machines del CTIC UNI (hoy OTI), viajé a Nevada para nuestra primera competencia internacional. En ARLISS el rover sube en un cohete, desciende en paracaídas y tiene que llegar solo hasta una meta en el desierto.</p>
-              <p data-i18n="tl.2.p2">Lideré la integración de sistemas y la telemetría (captura, almacenamiento y transmisión de datos en tiempo real) y optimicé el control y el procesamiento de señales para que la navegación fuera robusta. Logramos el 4.º lugar internacional y fuimos el primer equipo peruano en la categoría CanSat Rover.</p>
+              <p data-i18n="tl.2.p2">Lideré la integración de sistemas y optimicé el control y el procesamiento de señales para que la navegación fuera robusta. Logramos el 4.º lugar internacional y fuimos el primer equipo peruano en la categoría CanSat Rover.</p>
               <a class="stop-link mono" href="https://elheraldo.pe/robot-cansat-rover-de-la-uni-participa-en-competencia-internacional-en-nevada/" target="_blank" rel="noopener" data-i18n="tl.2.link">Leer la nota en El Heraldo ↗</a>
             </div>
           </li>
@@ -407,10 +420,10 @@
                 <p class="mono card-num">01</p>
                 <p class="card-impact" data-i18n="proj.1.impact">4.º lugar ARLISS 2025 · Noshiro Space Event 2026</p>
                 <h3 class="card-title" data-i18n="proj.1.title">CanSat Rover autónomo — COSMIX</h3>
-                <p class="mono card-sub" data-i18n="proj.1.sub">Integración de sistemas · Telemetría · Control · Navegación</p>
-                <p class="card-desc" data-i18n="proj.1.desc">Rover tipo CanSat que se lanza en un cohete, desciende en paracaídas y navega de forma autónoma hasta una meta, guiado por su cámara y sus sensores ultrasónicos. Me encargué de la integración de sistemas y de la telemetría (captura, almacenamiento y transmisión de datos en tiempo real), y optimicé el control y el procesamiento de señales para la navegación.</p>
+                <p class="mono card-sub" data-i18n="proj.1.sub">Integración de sistemas · Control · Navegación</p>
+                <p class="card-desc" data-i18n="proj.1.desc">Rover tipo CanSat que se lanza en un cohete, desciende en paracaídas y navega de forma autónoma hasta una meta, guiado por su cámara y sus sensores ultrasónicos. Me encargué de la integración de sistemas y optimicé el control y el procesamiento de señales para la navegación.</p>
                 <p class="card-desc" data-i18n="proj.1.desc2">Compitió en ARLISS 2025 (4.º lugar internacional) y, en una versión mejorada, en el Noshiro Space Event 2026 en Japón. Para ARLISS 2026 apoyé el diseño del chasis.</p>
-                <div class="tags"><span data-i18n="proj.1.t1">Integración de sistemas</span><span data-i18n="proj.1.t2">Telemetría</span><span>C/C++</span><span data-i18n="proj.1.t4">Procesamiento de señales</span><span data-i18n="proj.1.t5">Diseño de chasis</span></div>
+                <div class="tags"><span data-i18n="proj.1.t1">Integración de sistemas</span><span>C/C++</span><span data-i18n="proj.1.t4">Procesamiento de señales</span><span data-i18n="proj.1.t5">Diseño de chasis</span></div>
               </div>
               <figure class="card-photo card-photo-lg">
                 <button type="button" class="zoom" data-full="img/proyecto-cansat-rover.jpg" aria-label="Ampliar foto">
@@ -630,7 +643,7 @@
           <div class="skill-group reveal">
             <span class="skill-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="1.5"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg></span>
             <h3 data-i18n="skills.g2">Embebidos y electrónica</h3>
-            <div class="chips"><span data-i18n="skills.g2.int">Integración de sistemas</span><span data-i18n="skills.g2.tel">Telemetría</span><span data-i18n="skills.g2.daq">Adquisición de datos</span><span data-i18n="skills.g2.sen">Sensores e instrumentación</span><span>IoT</span><span>C/C++</span></div>
+            <div class="chips"><span data-i18n="skills.g2.int">Integración de sistemas</span><span data-i18n="skills.g2.daq">Adquisición de datos</span><span data-i18n="skills.g2.sen">Sensores e instrumentación</span><span>IoT</span><span>C/C++</span></div>
           </div>
           <div class="skill-group reveal">
             <span class="skill-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></span>
@@ -719,7 +732,7 @@
 
   <div class="toast mono" id="toast" role="status" aria-live="polite"></div>
 
-  <script src="js/i18n.js?v=9"></script>
+  <script src="js/i18n.js?v=10"></script>
   <script src="js/main.js?v=9"></script>
 </body>
 </html>
