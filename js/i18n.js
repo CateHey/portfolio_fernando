@@ -29,9 +29,6 @@ window.I18N = {
       "arm.rack.mid": "MEDIO",
       "arm.rack.high": "ALTO",
       "arm.grip": "PINZA",
-      "arm.metal": "Metal",
-      "arm.glass": "Vidrio",
-      "arm.plastic": "Plástico",
       "hero.spec.file": "perfil.yaml",
       "hero.spec.k1": "carrera",
       "hero.spec.v1": "\"Ing. Mecatrónica · UNI\"",
@@ -41,8 +38,9 @@ window.I18N = {
       "hero.spec.v3": "[robótica, datos, IA]",
       "hero.spec.k4": "estado",
       "hero.spec.v4": "disponible",
-      "hero.badge1": "4.º lugar internacional",
       "hero.badge2": "Top 50 mundial",
+      "hero.badge1": "4.º lugar internacional",
+      "hero.badge3": "3.er puesto · Diploma de Honor",
       "hero.scroll": "Desplázate",
       "mq.pid": "Control PID",
       "mq.cv": "Visión artificial",
@@ -455,11 +453,9 @@ window.I18N = {
       "arm.rack.mid": "MID",
       "arm.rack.low": "LOW",
       "arm.grip": "GRIP",
-      "arm.metal": "Metal",
-      "arm.glass": "Glass",
-      "arm.plastic": "Plastic",
       "arm.high": "High",
       "arm.mid": "Middle",
-      "arm.low": "Low"
+      "arm.low": "Low",
+      "hero.badge3": "3rd place · Diploma of Honour"
   }
 };

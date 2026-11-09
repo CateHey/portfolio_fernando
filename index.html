@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
-  <link rel="stylesheet" href="css/style.css?v=14">
+  <link rel="stylesheet" href="css/style.css?v=15">
   <script>document.documentElement.classList.replace('no-js','js');</script>
   <script type="application/ld+json">
   {
@@ -147,15 +147,27 @@
             <span class="orb-ring orb-ring-1"></span>
             <span class="orb-ring orb-ring-2"></span>
             <span class="orb-dots"></span>
-            <!-- Pick-and-place robot sorting metal, glass and plastic (animated by js/robot.js) -->
+            <!-- Pick-and-place robot building an achievements podium (animated by js/robot.js) -->
             <svg class="arm sorter" id="arm" viewBox="0 0 520 420" focusable="false">
               <defs>
                 <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
                   <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="1" opacity=".45"/>
                 </pattern>
-                <linearGradient id="gMetal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eef3ff"/><stop offset=".5" stop-color="#9aa8c4"/><stop offset="1" stop-color="#5d6a86"/></linearGradient>
-                <linearGradient id="gGlass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#bfe9ff" stop-opacity=".85"/><stop offset="1" stop-color="#3aa0e6" stop-opacity=".45"/></linearGradient>
-                <linearGradient id="gPlastic" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c8bcff"/><stop offset="1" stop-color="#7a62f0"/></linearGradient>
+                <linearGradient id="gLink" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#f4f8ff"/><stop offset=".45" stop-color="#c9d7f2"/><stop offset="1" stop-color="#7f93bd"/>
+                </linearGradient>
+                <linearGradient id="gLinkDark" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#2a4592"/><stop offset="1" stop-color="#132457"/>
+                </linearGradient>
+                <radialGradient id="gMotor" cx="40%" cy="35%" r="70%">
+                  <stop offset="0" stop-color="#3b5fc4"/><stop offset=".7" stop-color="#16295f"/><stop offset="1" stop-color="#0b1633"/>
+                </radialGradient>
+                <linearGradient id="gBase" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#2a4592"/><stop offset="1" stop-color="#0d1a3f"/>
+                </linearGradient>
+                <linearGradient id="gUni" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe39a"/><stop offset="1" stop-color="#d9a53a"/></linearGradient>
+                <linearGradient id="gArliss" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffc08f"/><stop offset="1" stop-color="#ea7a3c"/></linearGradient>
+                <linearGradient id="gNasa" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9dbcff"/><stop offset="1" stop-color="#3566f0"/></linearGradient>
               </defs>
 
               <!-- reach envelope + ground -->
@@ -174,11 +186,11 @@
                 <line x1="204" y1="314" x2="204" y2="330" class="stopper"/>
               </g>
 
-              <!-- three platforms: low / middle / high -->
+              <!-- podium: low / middle / high -->
               <g class="racks">
-                <rect x="340" y="330" width="44" height="32" class="rack rack-low"/>
-                <rect x="392" y="265" width="44" height="97" class="rack rack-mid"/>
-                <rect x="444" y="200" width="44" height="162" class="rack rack-high"/>
+                <rect x="340" y="330" width="44" height="32" class="rack"/>
+                <rect x="392" y="265" width="44" height="97" class="rack"/>
+                <rect x="444" y="200" width="44" height="162" class="rack"/>
                 <line x1="338" y1="330" x2="386" y2="330" class="rack-top rack-top-low"/>
                 <line x1="390" y1="265" x2="438" y2="265" class="rack-top rack-top-mid"/>
                 <line x1="442" y1="200" x2="490" y2="200" class="rack-top rack-top-high"/>
@@ -187,19 +199,46 @@
                 <text x="466" y="219" class="rack-label" text-anchor="middle" data-i18n="arm.rack.high">ALTO</text>
               </g>
 
-              <!-- pieces (created by script) -->
+              <!-- tokens (created by script) -->
               <g id="armItems"></g>
 
-              <!-- robot -->
-              <path d="M250 362 L266 342 H294 L310 362 Z" class="arm-base"/>
-              <line id="armL1" x1="280" y1="352" x2="280" y2="197" class="arm-link"/>
-              <line id="armL2" x1="280" y1="197" x2="380" y2="197" class="arm-link arm-link-2"/>
-              <line id="armGripBar" x1="364" y1="199" x2="396" y2="199" class="arm-grip"/>
-              <path id="armFingerL" d="M364 199 V225" class="arm-grip"/>
-              <path id="armFingerR" d="M396 199 V225" class="arm-grip"/>
-              <circle cx="280" cy="352" r="11" class="arm-joint"/>
-              <circle id="armElbow" cx="280" cy="197" r="9" class="arm-joint"/>
-              <circle id="armWrist" cx="380" cy="197" r="5" class="arm-ee"/>
+              <!-- robot base -->
+              <g class="arm-pedestal">
+                <rect x="238" y="354" width="84" height="8" rx="2" fill="url(#gBase)" stroke="#6cc7ff" stroke-opacity=".5"/>
+                <path d="M252 354 A28 28 0 0 1 308 354 Z" fill="url(#gBase)" stroke="#6cc7ff" stroke-width="1.5"/>
+                <circle cx="246" cy="358" r="1.6" fill="#6cc7ff"/><circle cx="314" cy="358" r="1.6" fill="#6cc7ff"/>
+              </g>
+
+              <!-- upper arm (rotated by script) -->
+              <g id="armG1" transform="translate(280 352) rotate(-90)">
+                <rect x="-16" y="-15" width="187" height="30" rx="15" fill="url(#gLink)" stroke="#9fc4ff" stroke-width="1.5"/>
+                <rect x="22" y="-6" width="110" height="12" rx="6" fill="url(#gLinkDark)" opacity=".9"/>
+                <path d="M22 9 C70 15 110 15 150 8" fill="none" stroke="#f5a85a" stroke-width="2" stroke-linecap="round" opacity=".85"/>
+                <circle cx="0" cy="0" r="20" fill="url(#gMotor)" stroke="#6cc7ff" stroke-width="2"/>
+                <circle cx="0" cy="0" r="11" fill="none" stroke="#9fc4ff" stroke-opacity=".6" stroke-width="1.5"/>
+                <circle cx="0" cy="0" r="4" fill="#6cc7ff"/>
+                <g fill="#9fc4ff"><circle cx="0" cy="-15.5" r="1.6"/><circle cx="15.5" cy="0" r="1.6"/><circle cx="0" cy="15.5" r="1.6"/><circle cx="-15.5" cy="0" r="1.6"/></g>
+              </g>
+
+              <!-- forearm (rotated by script) -->
+              <g id="armG2" transform="translate(280 197) rotate(0)">
+                <rect x="-12" y="-11" width="169" height="22" rx="11" fill="url(#gLink)" stroke="#9fc4ff" stroke-width="1.5"/>
+                <rect x="20" y="-4" width="96" height="8" rx="4" fill="url(#gLinkDark)" opacity=".9"/>
+                <circle cx="145" cy="0" r="10" fill="url(#gMotor)" stroke="#6cc7ff" stroke-width="1.5"/>
+                <circle cx="145" cy="0" r="3" fill="#6cc7ff"/>
+                <circle cx="0" cy="0" r="16" fill="url(#gMotor)" stroke="#6cc7ff" stroke-width="2"/>
+                <circle cx="0" cy="0" r="8" fill="none" stroke="#9fc4ff" stroke-opacity=".6" stroke-width="1.5"/>
+                <circle cx="0" cy="0" r="3.5" fill="#6cc7ff"/>
+                <g fill="#9fc4ff"><circle cx="0" cy="-12" r="1.4"/><circle cx="12" cy="0" r="1.4"/><circle cx="0" cy="12" r="1.4"/><circle cx="-12" cy="0" r="1.4"/></g>
+              </g>
+
+              <!-- gripper (stays vertical) -->
+              <g id="armGrip" transform="translate(425 197)">
+                <rect x="-7" y="-10" width="14" height="9" rx="2" fill="url(#gLinkDark)" stroke="#6cc7ff" stroke-width="1.2"/>
+                <rect x="-22" y="-2" width="44" height="6" rx="3" fill="url(#gLink)" stroke="#9fc4ff" stroke-width="1"/>
+                <path id="armFingerL" d="M-21 2 h5 v24 l-3 3 h-2 Z" class="arm-finger"/>
+                <path id="armFingerR" d="M16 2 h5 v27 h-2 l-3 -3 Z" class="arm-finger"/>
+              </g>
 
               <!-- control HUD -->
               <g class="hud" transform="translate(10 92)">
@@ -218,13 +257,13 @@
                 <rect id="hudG" x="42" y="73" width="2" height="7" rx="3.5" class="hud-fill hud-fill-3"/>
                 <text id="hudGv" x="116" y="80" class="hud-v" text-anchor="end">OFF</text>
                 <line x1="10" y1="92" x2="116" y2="92" class="hud-sep"/>
-                <text id="armStatus" x="10" y="110" class="hud-status">Metal → Alto</text>
-                <rect x="10" y="122" width="9" height="9" rx="2" fill="url(#gMetal)"/>
-                <text x="24" y="130" class="hud-leg" data-i18n="arm.metal">Metal</text>
-                <rect x="10" y="137" width="9" height="9" rx="2" fill="url(#gGlass)" stroke="#6cc7ff" stroke-width=".8"/>
-                <text x="24" y="145" class="hud-leg" data-i18n="arm.glass">Vidrio</text>
-                <rect x="10" y="152" width="9" height="9" rx="4" fill="url(#gPlastic)"/>
-                <text x="24" y="160" class="hud-leg" data-i18n="arm.plastic">Plástico</text>
+                <text id="armStatus" x="10" y="110" class="hud-status">UNI → Bajo</text>
+                <rect x="10" y="122" width="9" height="9" rx="2" fill="url(#gNasa)"/>
+                <text x="24" y="130" class="hud-leg">NASA</text>
+                <rect x="10" y="137" width="9" height="9" rx="2" fill="url(#gArliss)"/>
+                <text x="24" y="145" class="hud-leg">ARLISS</text>
+                <rect x="10" y="152" width="9" height="9" rx="2" fill="url(#gUni)"/>
+                <text x="24" y="160" class="hud-leg">UNI</text>
               </g>
             </svg>
           </div>
@@ -240,8 +279,9 @@
             </dl>
           </aside>
           <div class="hero-badges">
-            <p class="float-badge float-badge-a"><span class="fb-k mono">ARLISS 2025</span><span class="fb-v" data-i18n="hero.badge1">4.º lugar internacional</span></p>
-            <p class="float-badge float-badge-b"><span class="fb-k mono">NASA Space Apps</span><span class="fb-v" data-i18n="hero.badge2">Top 50 mundial</span></p>
+            <p class="float-badge" data-token="nasa" style="--c-rgb: 79, 134, 255"><span class="fb-k mono">NASA Space Apps</span><span class="fb-v" data-i18n="hero.badge2">Top 50 mundial</span></p>
+            <p class="float-badge" data-token="arliss" style="--c-rgb: 255, 159, 90"><span class="fb-k mono">ARLISS 2025</span><span class="fb-v" data-i18n="hero.badge1">4.º lugar internacional</span></p>
+            <p class="float-badge" data-token="uni" style="--c-rgb: 245, 196, 81"><span class="fb-k mono">UNI · FIM 2024</span><span class="fb-v" data-i18n="hero.badge3">3.er puesto · Diploma de Honor</span></p>
           </div>
           </div>
         </div>
@@ -761,6 +801,6 @@
 
   <script src="js/i18n.js?v=10"></script>
   <script src="js/main.js?v=9"></script>
-  <script src="js/robot.js?v=1"></script>
+  <script src="js/robot.js?v=2"></script>
 </body>
 </html>

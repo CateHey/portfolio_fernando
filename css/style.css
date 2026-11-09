@@ -289,7 +289,8 @@ body.is-loaded .arm-reach { opacity: 0.3; }
 .arm-label-strong { fill: #fff; }
 .arm-link { stroke-width: 7; }
 .arm-link-2 { stroke-width: 5; }
-.arm-grip { fill: none; stroke: var(--sky); stroke-width: 3; stroke-linecap: round; }
+.arm-finger { fill: url(#gLink); stroke: #9fc4ff; stroke-width: 1; stroke-linejoin: round; }
+#armG1, #armG2 { filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.45)); }
 .sorter .belt { fill: #0b1631; stroke: var(--sky); stroke-width: 1.5; }
 .sorter .belt-dash { stroke: #6cc7ff; stroke-width: 2; stroke-dasharray: 10 10; opacity: 0.75; }
 .sorter .roller { fill: var(--bg-2); stroke: var(--sky); stroke-width: 1.5; }
@@ -297,9 +298,9 @@ body.is-loaded .arm-reach { opacity: 0.3; }
 .sorter .stopper { stroke: #f5a85a; stroke-width: 3; stroke-linecap: round; }
 .sorter .rack { fill: rgba(15, 30, 66, 0.85); stroke: rgba(108, 150, 255, 0.35); stroke-width: 1; }
 .sorter .rack-top { stroke-width: 3.5; stroke-linecap: round; }
-.sorter .rack-top-low { stroke: #b9a8ff; }
-.sorter .rack-top-mid { stroke: #6cc7ff; }
-.sorter .rack-top-high { stroke: #d6deef; }
+.sorter .rack-top-low { stroke: #f5c451; }
+.sorter .rack-top-mid { stroke: #ff9f5a; }
+.sorter .rack-top-high { stroke: #4f86ff; }
 .sorter .rack-label { font-family: var(--font-mono); font-size: 8.5px; letter-spacing: 0.08em; fill: var(--muted); }
 .sorter .piece { transition: opacity 0.2s; }
 .hud-bg { fill: rgba(5, 10, 26, 0.8); stroke: rgba(108, 150, 255, 0.35); }
@@ -319,7 +320,11 @@ html.js body.is-loaded .arm .draw:not(.arm-reach) { stroke-dashoffset: 0; }
 
 .float-badge { position: relative; z-index: 3; flex: 1; justify-content: center; display: flex; flex-direction: column; gap: 0.1rem; padding: 0.7rem 1rem; border-radius: 12px; border: 1px solid var(--line-2); background: rgba(11, 22, 49, 0.82); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 18px 40px -20px rgba(0, 0, 0, 0.8); }
 .hero-cards { position: relative; z-index: 3; display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 0.8rem; width: 100%; max-width: 540px; margin-top: -0.6rem; }
-.hero-badges { display: flex; flex-direction: column; gap: 0.8rem; }
+.hero-badges { display: flex; flex-direction: column; gap: 0.55rem; }
+.hero-badges .float-badge { padding: 0.5rem 0.85rem; border-left: 3px solid rgb(var(--c-rgb, 108, 199, 255)); transition: border-color 0.4s, box-shadow 0.5s, transform 0.5s var(--ease-out), background-color 0.4s; }
+.hero-badges .float-badge .fb-k { color: rgb(var(--c-rgb, 108, 199, 255)); }
+.hero-badges .fb-v { font-size: 0.86rem; line-height: 1.25; }
+.hero-badges .float-badge.is-hit { border-color: rgb(var(--c-rgb)); background: rgba(var(--c-rgb), 0.16); box-shadow: 0 0 0 1px rgba(var(--c-rgb), 0.55), 0 14px 34px -10px rgba(var(--c-rgb), 0.75); transform: translateX(-4px); }
 .fb-k { color: var(--sky); font-size: 0.66rem; }
 .fb-v { font-family: var(--font-display); font-weight: 700; font-size: 0.95rem; }
 @keyframes bob { from { transform: translateY(-6px); } to { transform: translateY(6px); } }
@@ -624,7 +629,6 @@ a.cv:hover { color: var(--sky); }
   .float-badge { padding: 0.55rem 0.8rem; }
   .fb-v { font-size: 0.85rem; }
   .hero-cards { grid-template-columns: 1fr; }
-  .hero-badges { flex-direction: row; }
   .gallery, .skills, .certs { grid-template-columns: 1fr; }
   .projects > .card, .projects > .card.has-photo, .projects > .card.card-sm { grid-column: 1 / -1; }
   .stats { gap: 0.8rem; }
